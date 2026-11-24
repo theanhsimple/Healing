@@ -15,7 +15,7 @@ const PREFIX = "/healing";
 // Request headers worth passing on (Range is what lets audio and video seek).
 const FORWARD = ["accept", "accept-encoding", "accept-language", "range", "if-none-match", "if-modified-since"];
 
-export default {
+const worker = {
   async fetch(request) {
     const url = new URL(request.url);
     const { pathname } = url;
@@ -61,3 +61,5 @@ export default {
     return new Response(response.body, response);
   },
 };
+
+export default worker;
