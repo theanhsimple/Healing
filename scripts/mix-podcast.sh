@@ -3,11 +3,17 @@
 #
 #   scripts/mix-podcast.sh <voice> <music> <out.mp3> [title] [track] [cover.jpg]
 #
-# Follows the series' production notes ("Hướng dẫn sản xuất"):
-#   - voice is the main layer; music sits ~18 dB under it while speaking
+# Sound: a calm, blended podcast.
+#   - voice leads, but the music stays present: ~11-12 dB under the voice
+#     while speaking, and it "breathes" — ducking under each phrase and
+#     rising a little in the pauses (side-chain ducking keyed by the voice)
+#   - the voice gets a soft room reverb (scripts/assets/room-ir.wav) so it
+#     sits in the same space as the piano instead of on top of it
 #   - music-only intro (fade in), music swells back after the last word,
 #     then fades out
 #   - final loudness -16 LUFS integrated, true peak <= -1.5 dBTP
+# (Episode 01 v1 used a fixed bed 18 dB under the voice; it sounded too
+# separated — the voice was "on top" of a barely audible track.)
 # Requires ffmpeg and python3. Intermediate files go to a temp directory.
 set -euo pipefail
 
@@ -21,8 +27,10 @@ COVER=${6:-}
 INTRO=8          # seconds of music before the voice starts
 OUTRO_HOLD=10    # seconds of music after the voice ends, before the fade
 FADE_OUT=8       # final fade-out length
-BED_DB=-18       # music level under the voice, relative to the voice
+BED_DB=-5        # music base level during the voice section (before ducking)
+DUCK_RATIO=2     # how strongly the voice pushes the music down while speaking
 INTRO_DB=0       # music level when it plays alone, relative to the voice
+REVERB_DB=-17    # level of the voice's room reverb (wet), relative to the dry voice
 TARGET=-16       # integrated loudness (LUFS)
 
 TMP=$(mktemp -d)
@@ -52,7 +60,8 @@ ffmpeg -v error -y -i "$VOICE" -ac 1 -ar 48000 -af "\
 highpass=f=80,\
 afftdn=nr=14:nf=-38:tn=1,\
 equalizer=f=220:t=q:w=1.1:g=-2,\
-equalizer=f=3200:t=q:w=1.2:g=1.5,\
+equalizer=f=4200:t=q:w=1.4:g=-1.5,\
+treble=g=-1:f=9000,\
 agate=threshold=0.05:ratio=3:range=0.2:attack=5:release=250:knee=3" \
   "$TMP/voice_clean.wav"
 loudnorm2 "$TMP/voice_clean.wav" "$TMP/voice.wav" "$TARGET" -ar 48000 -ac 1
@@ -89,10 +98,17 @@ for (a,ga),(b,gb) in reversed(list(zip(pts,pts[1:]))):
 print(f"pow(10,({expr})/20)")
 PY
 )
-ffmpeg -v error -y -i "$TMP/voice.wav" -i "$TMP/music_norm.wav" -filter_complex "\
-[0:a]adelay=$((INTRO*1000)):all=1,apad,pan=stereo|c0=c0|c1=c0[v];\
-[1:a]volume='$ENV':eval=frame[m];\
-[v][m]amix=inputs=2:duration=longest:normalize=0,atrim=0:$TOTAL[mix]" \
+IR="$(dirname "$0")/assets/room-ir.wav"
+ffmpeg -v error -y -i "$TMP/voice.wav" -i "$TMP/music_norm.wav" -i "$IR" -filter_complex "\
+[0:a]adelay=$((INTRO*1000)):all=1,apad,asplit=3[vdry][vrev][vkey];\
+[vdry]pan=stereo|c0=c0|c1=c0[dry];\
+[vrev]pan=stereo|c0=c0|c1=c0[vrs];\
+[vrs][2:a]afir=dry=0:wet=1:irgain=1,lowpass=f=6000,volume=${REVERB_DB}dB[wet];\
+[dry][wet]amix=inputs=2:normalize=0[voice];\
+[vkey]pan=stereo|c0=c0|c1=c0[key];\
+[1:a]volume='$ENV':eval=frame[bed];\
+[bed][key]sidechaincompress=threshold=0.1:ratio=$DUCK_RATIO:attack=120:release=900:knee=4:makeup=1[m];\
+[voice][m]amix=inputs=2:duration=longest:normalize=0,atrim=0:$TOTAL[mix]" \
   -map "[mix]" "$TMP/mix.wav"
 loudnorm2 "$TMP/mix.wav" "$TMP/master.wav" "$TARGET" -ar 44100
 
@@ -108,6 +124,12 @@ ffmpeg -v error -y -i "$TMP/master.wav" "${COVER_ARGS[@]}" -map 0:a -c:a libmp3l
 if [ -n "${MIX_DEBUG_DIR:-}" ]; then
   mkdir -p "$MIX_DEBUG_DIR"
   cp "$TMP/voice.wav" "$TMP/music_norm.wav" "$TMP/mix.wav" "$MIX_DEBUG_DIR/"
+  # music exactly as it sits in the mix (envelope + ducking), for level checks
+  ffmpeg -v error -y -i "$TMP/voice.wav" -i "$TMP/music_norm.wav" -filter_complex "\
+[0:a]adelay=$((INTRO*1000)):all=1,apad,pan=stereo|c0=c0|c1=c0[key];\
+[1:a]volume='$ENV':eval=frame[bed];\
+[bed][key]sidechaincompress=threshold=0.1:ratio=$DUCK_RATIO:attack=120:release=900:knee=4:makeup=1,atrim=0:$TOTAL[m]" \
+    -map "[m]" "$MIX_DEBUG_DIR/music_in_mix.wav"
   echo "$ENV" > "$MIX_DEBUG_DIR/envelope.txt"
 fi
 echo "Done: $OUT ($(python3 -c "print(round($TOTAL))")s)"
