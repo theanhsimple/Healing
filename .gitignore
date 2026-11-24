@@ -18,6 +18,9 @@
 /out/
 /dist-pages/
 
+# generated from content/daily-messages by scripts/build-daily-messages.mjs
+/public/daily-messages/
+
 # production
 /build
 

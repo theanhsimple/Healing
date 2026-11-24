@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { Check, Send } from "lucide-react";
 import { Container } from "@/components/ui/container";
+import { asset } from "@/lib/asset";
 import { formatMessageDate, vietnamDateKey } from "@/lib/daily-messages/date";
 import type { PublicMessage } from "@/lib/daily-messages/library";
 
@@ -16,21 +17,42 @@ const getServerDateKey = () => null;
 // If one date ever holds more than one publishable record, show the most specific.
 const PRIORITY: Record<PublicMessage["contentType"], number> = { special_day: 0, episode_message: 1, daily_message: 2 };
 
+// Batch 01 closing lines are English, later batches Vietnamese: mark the
+// English ones so screen readers switch voice.
+const VIETNAMESE = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i;
+
 function messageFor(messages: PublicMessage[], dateKey: string) {
   return messages.filter((m) => m.date === dateKey).sort((a, b) => PRIORITY[a.contentType] - PRIORITY[b.contentType])[0];
 }
 
 /**
  * "Thông điệp hôm nay": the library record whose publish_date is today
- * (Vietnam time). `messages` holds only approved/published records, with
- * reader-facing fields only. No record for today → the section is hidden.
+ * (Vietnam time), loaded from public/daily-messages/<date>.json — written
+ * at build time with approved/published records and reader-facing fields
+ * only (scripts/build-daily-messages.mjs). No file for today → hidden.
  */
-export function DailyMessage({ messages }: { messages: PublicMessage[] }) {
+export function DailyMessage() {
   const dateKey = useSyncExternalStore(subscribe, getDateKey, getServerDateKey);
   const [copied, setCopied] = useState(false);
-  const message = dateKey ? messageFor(messages, dateKey) : undefined;
+  // undefined = loading, null = nothing for today
+  const [loaded, setLoaded] = useState<{ date: string; message: PublicMessage | null }>();
+  const message = loaded && loaded.date === dateKey ? loaded.message : undefined;
 
-  if (dateKey && !message) return null;
+  useEffect(() => {
+    if (!dateKey) return;
+    let cancelled = false;
+    fetch(asset(`/daily-messages/${dateKey}.json`))
+      .then((r) => (r.ok ? (r.json() as Promise<PublicMessage[]>) : []))
+      .catch(() => [] as PublicMessage[])
+      .then((list) => {
+        if (!cancelled) setLoaded({ date: dateKey, message: messageFor(list, dateKey) ?? null });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [dateKey]);
+
+  if (message === null) return null;
 
   async function share() {
     if (!message) return;
@@ -69,7 +91,7 @@ export function DailyMessage({ messages }: { messages: PublicMessage[] }) {
                   {message.message}
                 </p>
                 {message.closingLine ? (
-                  <p lang="en" className="mt-5 font-display text-lg italic text-muted">
+                  <p lang={VIETNAMESE.test(message.closingLine) ? undefined : "en"} data-closing className="mt-5 font-display text-lg italic text-muted">
                     {message.closingLine}
                   </p>
                 ) : null}

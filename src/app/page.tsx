@@ -6,7 +6,6 @@ import { HomeFilms } from "@/components/home/home-films";
 import { PodcastSpotlight } from "@/components/home/podcast-spotlight";
 import { publishedEpisodes } from "@/data/podcast";
 import { getContentRepository } from "@/lib/content";
-import { getPublicMessages } from "@/lib/daily-messages/library";
 import { routes } from "@/lib/routes";
 
 /*
@@ -22,8 +21,6 @@ export default async function HomePage() {
     repo.getCategories(),
     repo.getLatestVideos({ limit: 3 }),
   ]);
-  // Only approved/published library records, reader-facing fields only.
-  const messages = getPublicMessages();
   const latestEpisode = publishedEpisodes[publishedEpisodes.length - 1];
 
   return (
@@ -36,7 +33,7 @@ export default async function HomePage() {
         }
         secondary={{ href: routes.library(), label: "Xem thước phim" }}
       />
-      {messages.length > 0 ? <DailyMessage messages={messages} /> : null}
+      <DailyMessage />
       {latestEpisode ? <PodcastSpotlight episode={latestEpisode} /> : null}
       {latest.length > 0 ? <HomeFilms videos={latest} categories={categories} moods={moods} /> : null}
       <AuthorTeaser />

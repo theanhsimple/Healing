@@ -19,6 +19,10 @@ const env = {
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL ?? "https://theanhsimple.github.io/Healing",
 };
 
+// Today-only message files for the home page (public/daily-messages/).
+const daily = spawnSync("node", ["scripts/build-daily-messages.mjs"], { stdio: "inherit", env });
+if (daily.status !== 0) process.exit(daily.status ?? 1);
+
 const hadProxy = existsSync(proxy);
 if (hadProxy) renameSync(proxy, parked);
 let status = 1;

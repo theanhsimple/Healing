@@ -16,6 +16,10 @@ The website never rewrites the content. Editorial rules (current version: v1.3; 
 | `editorial_note`, `status`, `visual_direction` | Never sent to the browser. |
 | `category`, `mood`, `content_type`, `related_episode_id`, `special_day` | Kept and carried through for later features. They are not shown yet. |
 
+At build time each approved day is written to `public/daily-messages/<date>.json`
+(`scripts/build-daily-messages.mjs`, generated, not committed). The home page
+fetches only today's file, so page weight does not grow with the library.
+
 If a date has no approved record, the "Thông điệp hôm nay" section is hidden that day.
 If one date has more than one record, the site shows `special_day` first, then
 `episode_message`, then `daily_message`.
