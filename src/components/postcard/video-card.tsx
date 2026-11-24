@@ -33,7 +33,7 @@ export function VideoCard({
 }: VideoCardProps) {
   return (
     <article className={cn("group relative", className)}>
-      <div className="relative aspect-[3/2] overflow-hidden bg-media">
+      <div className="film-grain relative aspect-[3/2] overflow-hidden bg-media">
         <Image
           src={video.thumbnailUrl}
           alt=""

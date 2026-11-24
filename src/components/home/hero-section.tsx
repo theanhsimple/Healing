@@ -20,7 +20,7 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
   return (
     <section aria-labelledby="hero-title" className="pt-3 md:pt-6 lg:pt-8">
       <Container>
-        <div className="relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[16/10] lg:aspect-[21/9]">
+        <div className="film-grain relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[16/10] lg:aspect-[21/9]">
           <HeroVideo
             src={asset("/media/hero-be-tre.mp4")}
             poster={asset("/images/hero-be-tre.jpg")}

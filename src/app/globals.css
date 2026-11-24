@@ -244,6 +244,23 @@
 }
 
 @layer components {
+  /* Film grain shared by all footage (hero, film cards, player poster):
+     a static noise tile blended over the image, so every clip reads as if
+     shot on the same stock. Static on purpose: no motion, no cost. */
+  .film-grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .film-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    opacity: 0.11;
+    mix-blend-mode: overlay;
+  }
+
   /* Daily message as the back of a postcard: warm paper, soft lift, faint grain. */
   .postcard {
     --paper: #fdfbf6;
