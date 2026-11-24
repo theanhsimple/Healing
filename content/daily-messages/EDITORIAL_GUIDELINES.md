@@ -1,60 +1,58 @@
 # LITTLE POSTCARD
-## Editorial Guidelines
+## Editorial Guidelines · Master Library v1.2
 
-**Project:** The Little Postcard Project  
-**Library:** Master Message Library  
-**Language:** Vietnamese  
-**Version:** 1.0.0
+### Purpose
+Little Postcard sends one small observation, story, discovery or invitation each day. It should make readers notice something, not tell them how they must feel.
 
-## 1. Editorial purpose
-Little Postcard gửi đến người đọc một mẩu suy nghĩ, câu chuyện, quan sát hoặc lời mời trải nghiệm mỗi ngày. Nội dung cần có giá trị độc lập, không mặc định người đọc đang buồn hoặc cần được chữa lành.
+### Voice
+- Vietnamese that sounds natural when read aloud.
+- Warm, observant, thoughtful and grounded.
+- Prefer concrete details over abstract motivational language.
+- Vary sentence rhythm and content form.
+- Allow curiosity, humour, wonder and ordinary pleasure alongside reflective topics.
 
-## 2. Voice and tone
-- Tự nhiên, gần gũi, có chiều sâu nhưng không lên lớp.
-- Viết như một người quan sát tinh tế đang chia sẻ điều mình nhận ra.
-- Ưu tiên chi tiết cụ thể, hình ảnh đời thường và góc nhìn mới.
-- Không cố tạo câu triết lý ở cuối mọi bài.
-- Không lạm dụng từ ngữ trừu tượng hoặc văn phong quá hoa mỹ.
+### Avoid
+- Generic motivational quotes and repeated healing clichés.
+- Assuming every reader is sad, lonely, heartbroken or in need of advice.
+- Moralizing, preaching or forcing a grand conclusion.
+- Invented facts or unverified historical claims.
+- Rewriting a message only by swapping synonyms.
 
-## 3. Avoid
-Tránh lặp lại các mô-típ và cụm từ sáo mòn như “mọi chuyện rồi sẽ ổn”, “hãy yêu bản thân”, “phiên bản tốt nhất”, “vũ trụ gửi tín hiệu”, “mọi thứ xảy ra đều có lý do”. Không biến mọi chủ đề thành bài học chữa lành. Không dùng giọng khuyên răn hoặc khẳng định cảm xúc thay người đọc.
+### Content categories
+A Quiet Mind; The Art of Living; Nature Notes; The World of Art; Little Journeys; Human Stories; Time & Memory; Music & Sound; Creative Life; Small Joys; Relationships & Connections; Change & New Beginnings; Science & Curiosity; Philosophy & Perspective; Tomorrow & Possibility.
 
-## 4. Content variety
-Luân phiên các nhóm chủ đề: A Quiet Mind, The Art of Living, Nature Notes, The World of Art, Little Journeys, Human Stories, Time & Memory, Music & Sound, Creative Life, Small Joys, Relationships & Connections, Change & New Beginnings, Science & Curiosity, Philosophy & Perspective, Tomorrow & Possibility.
+### Data fields
+message_id, publish_date, content_type, category, title, message, closing_line, mood, visual_direction, related_episode_id, special_day, editorial_note, status.
 
-Không để hai ngày liên tiếp có cùng category nếu có thể. Theo dõi ý tưởng cốt lõi, không chỉ theo dõi tiêu đề để tránh trùng lặp ngữ nghĩa.
+### Length and closing line
+- `message`: 40–90 whitespace-separated words.
+- `closing_line`: populate for consistency with Batch 01. It should add a small afterthought or invitation, not repeat the last sentence.
+- A closing line should sound natural and should not become a compulsory slogan.
 
-## 5. Daily message structure
-Mỗi bản ghi gồm:
-- message_id: định danh duy nhất, định dạng LP-DM-YYYYMMDD.
-- publish_date: ngày xuất bản theo ISO 8601.
-- content_type: daily_message, special_day hoặc episode_message.
-- category: nhóm chủ đề.
-- title: tiêu đề ngắn, tự nhiên.
-- message: nội dung chính, thường 40–90 từ.
-- closing_line: câu kết tùy chọn, không bắt buộc phải có.
-- mood: sắc thái cảm xúc.
-- visual_direction: gợi ý hình ảnh minh họa.
-- related_episode_id: ID tập liên quan, để null nếu không có.
-- special_day: tên dịp đặc biệt, để null nếu không có.
-- editorial_note: lưu ý biên tập.
-- status: draft, approved hoặc published.
+### Special days
+- Lunar and movable dates must be checked against a reliable Vietnamese lunar calendar and official announcements.
+- Keep the event label in `special_day`; use `content_type = special_day` when the message is specifically written for that occasion.
+- Do not assume every reader celebrates in the same way or has the same family circumstances.
+- For history and remembrance days, use respectful, fact-based language and avoid turning the day into generic inspiration.
 
-## 6. Episode messages
-Chỉ gắn related_episode_id khi đã có thông tin tập phát hành. Thông điệp ngày phát hành cần liên quan đến chủ đề tập nhưng vẫn có giá trị nếu người đọc chưa nghe tập. Không tự suy đoán lịch phát hành hoặc tên tập.
+### Episode messages
+Only set `related_episode_id` when episode information is confirmed. On release days, the daily message should connect to the episode while remaining useful to readers who have not listened.
 
-## 7. Special days and factual accuracy
-Ngày lễ cần được kiểm tra ngày tháng theo lịch chính thức, đặc biệt với ngày âm lịch và các dịp thay đổi theo từng năm. Với nội dung khoa học, lịch sử hoặc văn hóa, cần kiểm chứng thông tin trước khi xuất bản. Không trình bày thông tin chưa xác minh như sự thật.
+### Publishing
+- All imported records remain `draft` until reviewed.
+- Do not display `editorial_note` or `status` to end users.
+- Compare each daily message with the actual episode release calendar.
+- Verify factual claims in science, history, culture and geography.
+- Check for semantic duplication, not only identical titles.
 
-## 8. Quality checklist
-Trước khi duyệt:
-1. Ý tưởng có cụ thể và rõ không?
-2. Có trùng ý với nội dung đã đăng không?
-3. Có tự nhiên khi đọc thành tiếng không?
-4. Có đang dạy đời hoặc áp đặt cảm xúc không?
-5. Có chi tiết riêng khiến bài này đáng nhớ không?
-6. Visual direction có thực sự hỗ trợ nội dung không?
-7. Thông tin thực tế đã được kiểm chứng chưa?
+### Quality checklist
+1. Is there a specific observation or idea?
+2. Is the wording natural when read aloud?
+3. Is it distinct from recent messages in meaning?
+4. Does it avoid prescribing emotions?
+5. Does the closing line add something rather than repeat?
+6. Is the visual direction appropriate?
+7. Are factual claims and dates verified?
 
-## 9. CMS usage
-JSON là nguồn dữ liệu chính. CMS có thể lọc theo publish_date, category, content_type, mood và status. Không hiển thị các trường editorial_note hoặc status cho người đọc cuối. Chỉ xuất bản bản ghi có status = approved hoặc published.
+### Batch 02 revision note
+Version 1.2 shortens the 27 messages previously over 90 words, fills all 366 closing_line fields, and adds dedicated editorial messages for key Vietnamese dates in 2027. All records remain drafts.
