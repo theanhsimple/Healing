@@ -175,6 +175,16 @@
   }
 }
 
+/* Background-music indicator bars */
+@keyframes eq {
+  from {
+    transform: scaleY(0.3);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
 @keyframes page-in {
   from {
     opacity: 0;

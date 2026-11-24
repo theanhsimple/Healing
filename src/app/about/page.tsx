@@ -236,7 +236,7 @@ export default function AboutPage() {
           </div>
           <p className="mt-16 max-w-md text-xs leading-relaxed text-muted">
             Ảnh minh hoạ từ Unsplash. Thước phim từ Wikimedia Commons — tác giả và giấy phép được ghi
-            trên trang của từng tấm bưu thiếp.
+            trên trang của từng tấm bưu thiếp. Nhạc nền: “Four-Note Motif”.
           </p>
         </Container>
       </section>

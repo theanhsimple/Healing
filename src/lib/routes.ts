@@ -9,6 +9,8 @@ export const routes = {
     return params ? `/library?${params}` : "/library";
   },
   postcard: (slug: string) => `/postcard/${encodeURIComponent(slug)}`,
+  podcast: "/podcast",
+  podcastEpisode: (slug: string) => `/podcast/${encodeURIComponent(slug)}`,
   search(q?: string) {
     const term = q?.trim();
     return term ? `/search?q=${encodeURIComponent(term)}` : "/search";

@@ -8,6 +8,7 @@ export interface NavItem {
 export const primaryNav: NavItem[] = [
   { href: routes.home, label: "Trang chủ" },
   { href: routes.library(), label: "Thư viện" },
+  { href: routes.podcast, label: "Podcast" },
   { href: routes.about, label: "Giới thiệu" },
 ];
 
@@ -16,6 +17,7 @@ export const footerNav: { heading: string; links: NavItem[] }[] = [
     heading: "Khám phá",
     links: [
       { href: routes.library(), label: "Thư viện" },
+      { href: routes.podcast, label: "Podcast" },
       { href: routes.search(), label: "Tìm kiếm" },
     ],
   },

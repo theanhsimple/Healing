@@ -5,6 +5,7 @@ import { routes } from "@/lib/routes";
 import { MobileMenu } from "./mobile-menu";
 import { NavLinks } from "./nav-links";
 import { ThemeMenu } from "./theme-switcher";
+import { BackgroundMusic } from "./background-music";
 import { Wordmark } from "./wordmark";
 
 export function PublicHeader() {
@@ -25,7 +26,10 @@ export function PublicHeader() {
           >
             <Search aria-hidden className="size-[1.125rem]" strokeWidth={1.5} />
           </Link>
-          <ThemeMenu />
+          <BackgroundMusic />
+          <div className="hidden md:block">
+            <ThemeMenu />
+          </div>
           <div className="-mr-2 md:hidden">
             <MobileMenu />
           </div>
