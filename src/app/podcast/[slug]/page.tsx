@@ -118,7 +118,7 @@ async function EpisodeView({ params }: Pick<PageProps<"/podcast/[slug]">, "param
                 downloadName={`${episode.slug}.mp3`}
               />
               <p className="mt-3 text-xs text-muted">
-                Kịch bản đầy đủ của tập ở ngay bên dưới, bạn có thể vừa nghe vừa đọc.
+                Lời của tập ở ngay bên dưới, bạn có thể vừa nghe vừa đọc.
               </p>
             </section>
           ) : (
@@ -133,28 +133,16 @@ async function EpisodeView({ params }: Pick<PageProps<"/podcast/[slug]">, "param
 
           {episode.script?.map((section) => (
             <section key={section.label} aria-label={section.label} className="mt-14">
-              <h2 className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
-                <span className="eyebrow text-foreground">{section.label}</span>
-                <span className="text-xs text-muted tabular-nums">{section.time}</span>
-              </h2>
+              <h2 className="eyebrow border-b border-border pb-3 text-foreground">{section.label}</h2>
               <div className="mt-8 flex flex-col gap-5">
-                {section.blocks.map((block, i) =>
-                  block.kind === "cue" ? (
-                    <p
-                      key={i}
-                      className="border-l border-accent/50 pl-4 text-sm leading-relaxed italic text-muted"
-                    >
-                      {block.text}
-                    </p>
-                  ) : (
-                    <p
-                      key={i}
-                      className="font-display text-[1.3125rem] leading-[1.6] text-pretty text-foreground"
-                    >
-                      {block.text}
-                    </p>
-                  ),
-                )}
+                {section.paragraphs.map((paragraph, i) => (
+                  <p
+                    key={i}
+                    className="font-display text-[1.3125rem] leading-[1.6] text-pretty text-foreground"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </section>
           ))}

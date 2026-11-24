@@ -2,23 +2,17 @@
  * "Những điều nhỏ bé — The Little Postcard Project" podcast.
  *
  * Real content (not mock data): concept, 12-episode schedule and the
- * episode 01 reading script, taken verbatim from the project's planning
- * conversation. Planning notes, production notes and anything addressed
+ * episode 01 narration, taken verbatim from the project's planning
+ * conversation (sound / pacing cues and planned timecodes removed). Planning notes, production notes and anything addressed
  * to a specific listener are deliberately not published here.
  * Poster: generated with ChatGPT for this project.
  */
 import { asset } from "@/lib/asset";
 
-export interface ScriptBlock {
-  /** "cue" = sound / pacing direction, shown in italics. */
-  kind: "text" | "cue";
-  text: string;
-}
-
+/** A part of the episode as read aloud — narration only, no production cues. */
 export interface ScriptSection {
   label: string;
-  time: string;
-  blocks: ScriptBlock[];
+  paragraphs: string[];
 }
 
 export interface PodcastEpisode {
@@ -51,26 +45,19 @@ export const podcastSeries = {
   episodeLength: "5–7 phút mỗi tập",
 } as const;
 
-/** Splits a script passage into blocks; "[...]" lines are cues. */
-function passage(raw: string): ScriptBlock[] {
+/** Splits a passage into paragraphs on blank lines. */
+function passage(raw: string): string[] {
   return raw
     .trim()
     .split(/\n\s*\n/)
     .map((p) => p.trim())
-    .filter(Boolean)
-    .map((text) =>
-      text.startsWith("[") && text.endsWith("]")
-        ? { kind: "cue" as const, text: text.slice(1, -1) }
-        : { kind: "text" as const, text },
-    );
+    .filter(Boolean);
 }
 
 const episode01Script: ScriptSection[] = [
   {
-    label: "01 · Intro",
-    time: "00:00 – 00:30",
-    blocks: passage(`
-[Nhạc piano nhẹ bắt đầu. Tiếng chim hót xa xa, tiếng gió khẽ lùa qua những tán cây.]
+    label: "Mở đầu",
+    paragraphs: passage(`
 
 Chào em.
 
@@ -88,13 +75,11 @@ Một câu chuyện có tên là...
 
 Nghệ thuật không nghĩ quá nhiều.
 
-[Nghỉ 2 giây, nhạc chuyển nhẹ.]
 `),
   },
   {
-    label: "02 · The Story",
-    time: "00:30 – 03:30",
-    blocks: passage(`
+    label: "Câu chuyện",
+    paragraphs: passage(`
 Ngày xửa ngày xưa, trong một con phố nhỏ có một người họa sĩ sống cùng một chú mèo lười và rất nhiều chậu cây xanh.
 
 Căn nhà của anh không rộng lắm, nhưng có một ô cửa sổ rất đẹp. Mỗi buổi sáng, ánh nắng thường len qua rèm cửa, rơi xuống sàn nhà và chiếu lên chiếc giá vẽ đặt cạnh cửa sổ.
@@ -157,13 +142,11 @@ Và có lẽ, điều thú vị nhất của nghệ thuật không nằm ở vi�
 
 Đôi khi, nó chỉ đơn giản là được tự do tạo ra một thứ gì đó bằng chính cảm xúc của mình.
 
-[Nhạc piano ngân nhẹ, nghỉ 2 giây.]
 `),
   },
   {
-    label: "03 · Reflection",
-    time: "03:30 – 05:30",
-    blocks: passage(`
+    label: "Suy ngẫm",
+    paragraphs: passage(`
 Anh nghĩ cuộc sống của chúng ta đôi khi cũng giống như tấm canvas của người họa sĩ ấy.
 
 Có những ngày mình suy nghĩ quá nhiều về những điều chưa xảy ra.
@@ -218,10 +201,8 @@ Biết đâu, chính những điều tưởng chừng ngẫu nhiên ấy lại t
 `),
   },
   {
-    label: "04 · Closing",
-    time: "05:30 – 06:30",
-    blocks: passage(`
-[Nhạc chuyển sang piano và guitar mộc, nhẹ nhàng hơn.]
+    label: "Lời kết",
+    paragraphs: passage(`
 
 À, và nếu hôm nay em vẫn còn vài điều chưa giải quyết xong, cũng chẳng sao đâu.
 
@@ -245,7 +226,6 @@ Cũng không cần ai công nhận.
 
 Chỉ cần em thấy vui là được.
 
-[Nghỉ 2 giây.]
 
 Cảm ơn em đã dành thời gian lắng nghe câu chuyện hôm nay.
 
@@ -253,7 +233,6 @@ Hẹn gặp lại em trong tấm bưu thiếp tiếp theo, vào thứ Năm nhé.
 
 Chúc em có một buổi tối thật dịu dàng.
 
-[Nhạc piano ngân thêm 8–10 giây rồi fade out.]
 `),
   },
 ];
