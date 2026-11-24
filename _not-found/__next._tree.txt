@@ -1,4 +1,4 @@
-:HL["/Healing/_next/static/chunks/1rrjj2gsnw0yx.css","style"]
+:HL["/Healing/_next/static/chunks/1ri_qvce9k2n8.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":64,"c":"$Q2"}]]
-0:{"b":"7RDD9usIzEHQYuulWns-9","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"Oc-_-7MDQY2-J0o1Pa77i","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
