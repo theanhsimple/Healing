@@ -28,8 +28,10 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
             preload
             quality={85}
             sizes="(min-width: 1376px) 1280px, 100vw"
-            className="-z-10 object-cover object-[58%_50%] lg:object-center"
+            className="-z-10 object-cover object-[58%_50%] hero-drift lg:object-center"
           />
+          {/* Drifting mist (decorative, motion-safe only) */}
+          <div aria-hidden className="absolute -inset-x-1/4 inset-y-0 -z-10 hero-mist" />
           {/* Subtle scrim: keeps white text legible without flattening the image */}
           <div
             aria-hidden

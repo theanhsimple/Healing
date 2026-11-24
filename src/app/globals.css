@@ -185,6 +185,47 @@
   }
 }
 
+@keyframes hero-drift {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.09) translate(-1.2%, -0.8%);
+  }
+}
+
+@keyframes hero-mist {
+  from {
+    transform: translateX(-14%);
+    opacity: 0.55;
+  }
+  to {
+    transform: translateX(14%);
+    opacity: 1;
+  }
+}
+
+@keyframes envelope-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* translate(-50%,-50%) centring comes from the `translate` property, so only `transform` animates */
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(48px) rotate(-1.5deg) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes page-in {
   from {
     opacity: 0;
@@ -225,6 +266,170 @@
 }
 
 @layer components {
+  /* Daily message as the back of a postcard: warm paper, soft lift, faint grain. */
+  .postcard {
+    --paper: #fdfbf6;
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+    box-shadow:
+      0 1px 0 rgb(0 0 0 / 0.03),
+      0 24px 48px -28px rgb(60 40 20 / 0.35);
+  }
+  :root[data-theme="dark"] .postcard {
+    --paper: #1c1f1a;
+    box-shadow: 0 24px 48px -28px rgb(0 0 0 / 0.8);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .postcard {
+      --paper: #1c1f1a;
+      box-shadow: 0 24px 48px -28px rgb(0 0 0 / 0.8);
+    }
+  }
+
+  /* Postage stamp with perforated edge: a hole pattern on the outer box,
+     covered in the middle by the solid inner panel. */
+  .postcard-stamp {
+    width: 5.5rem;
+    height: 6.75rem;
+    padding: 5px;
+    background: radial-gradient(circle, transparent 2.6px, color-mix(in srgb, var(--accent) 10%, var(--paper)) 3px) -4.5px -4.5px / 9px 9px;
+    filter: drop-shadow(0 2px 3px rgb(60 40 20 / 0.18));
+  }
+  .postcard-stamp > div {
+    background: color-mix(in srgb, var(--accent) 10%, var(--paper));
+  }
+
+  /* ——— Envelope (home "Thông điệp hôm nay") ——— */
+  .envelope {
+    --env: #f6efe4;
+    --env-dark: #ecdfcc;
+    --env-line: color-mix(in srgb, var(--accent) 32%, transparent);
+    perspective: 900px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :root[data-theme="dark"] .envelope {
+    --env: #2a2722;
+    --env-dark: #34302a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .envelope {
+      --env: #2a2722;
+      --env-dark: #34302a;
+    }
+  }
+  .envelope-body {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    background: var(--env-dark);
+    border: 1px solid var(--env-line);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 26px 50px -30px rgb(60 40 20 / 0.45);
+    transition: transform 0.6s var(--ease-out-soft), box-shadow 0.6s var(--ease-out-soft);
+  }
+  .envelope:not(:disabled):hover .envelope-body,
+  .envelope:focus-visible .envelope-body {
+    transform: translateY(-4px) rotate(-0.6deg);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 34px 60px -30px rgb(60 40 20 / 0.5);
+  }
+  /* the front pocket (side and bottom folds) hides the letter until it rises */
+  .envelope-folds {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    clip-path: polygon(0 0, 50% 58%, 100% 0, 100% 100%, 0 100%);
+    background-color: var(--env);
+    background:
+      linear-gradient(to top right, transparent calc(50% - 0.6px), var(--env-line) 50%, transparent calc(50% + 0.6px)) left bottom / 50.2% 62% no-repeat,
+      linear-gradient(to top left, transparent calc(50% - 0.6px), var(--env-line) 50%, transparent calc(50% + 0.6px)) right bottom / 50.2% 62% no-repeat,
+      var(--env);
+  }
+  /* top flap: a triangle that lifts open */
+  .envelope-flap {
+    position: absolute;
+    inset: -1px -1px auto;
+    height: 58%;
+    background: var(--env-dark);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transform-origin: top center;
+    transition: transform 0.5s var(--ease-out-soft);
+    filter: drop-shadow(0 2px 2px rgb(60 40 20 / 0.12));
+    z-index: 3;
+  }
+  .envelope[data-state="opening"] .envelope-flap {
+    transform: rotateX(178deg);
+    z-index: 0;
+  }
+  /* the letter inside, rising as the envelope opens */
+  .envelope-letter {
+    position: absolute;
+    inset: 8% 7% 10%;
+    background: #fdfbf6;
+    border: 1px solid var(--env-line);
+    background-image: repeating-linear-gradient(to bottom, transparent 0 15px, color-mix(in srgb, var(--accent) 14%, transparent) 15px 16px);
+    background-position: 0 30px;
+    transform: translateY(0);
+    transition: transform 0.5s 0.12s var(--ease-out-soft);
+    z-index: 1;
+  }
+  .envelope[data-state="opening"] .envelope-letter {
+    transform: translateY(-42%);
+    z-index: 2;
+  }
+  :root[data-theme="dark"] .envelope-letter {
+    background-color: #1c1f1a;
+  }
+  .envelope-seal {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    z-index: 4;
+    display: grid;
+    width: 3.25rem;
+    height: 3.25rem;
+    place-items: center;
+    border-radius: 50%;
+    color: #fdf6ee;
+    background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--accent) 70%, white), var(--accent) 55%, color-mix(in srgb, var(--accent) 75%, black));
+    box-shadow:
+      inset 0 0 0 4px color-mix(in srgb, var(--accent) 85%, black),
+      inset 0 0 0 5px color-mix(in srgb, white 25%, transparent),
+      0 3px 6px rgb(60 30 20 / 0.3);
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s var(--ease-out-soft), opacity 0.3s;
+  }
+  .envelope:not(:disabled):hover .envelope-seal {
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+  .envelope[data-state="opening"] .envelope-seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .envelope:not(:disabled):not([data-state="opening"]) .envelope-body {
+      animation: envelope-float 6s ease-in-out infinite;
+    }
+    .envelope:not(:disabled):hover .envelope-body {
+      animation: none;
+    }
+    .letter-dialog[data-state="open"] {
+      animation: letter-in 0.55s var(--ease-out-soft) both;
+    }
+  }
+
+  /* Hero: very slow drift of the photo and a band of mist passing through. */
+  .hero-drift {
+    animation: hero-drift 38s ease-in-out infinite alternate;
+  }
+  .hero-mist {
+    background:
+      radial-gradient(40% 30% at 30% 62%, rgb(255 255 255 / 0.22), transparent 70%),
+      radial-gradient(35% 25% at 72% 70%, rgb(255 255 255 / 0.16), transparent 70%),
+      radial-gradient(50% 20% at 50% 80%, rgb(255 255 255 / 0.14), transparent 70%);
+    filter: blur(8px);
+    animation: hero-mist 46s ease-in-out infinite alternate;
+  }
+
   /* 4 / 8 / 12-column editorial grid */
   .editorial-grid {
     display: grid;

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Video } from "@/types/video";
 import { formatDate, formatDuration, formatDurationLong } from "@/lib/format";
 import { routes } from "@/lib/routes";
+import { CardPreview } from "./card-preview";
 
 interface VideoCardProps {
   video: Video;
@@ -41,6 +42,7 @@ export function VideoCard({
           loading={eager ? "eager" : "lazy"}
           className="object-cover transition-transform duration-[1400ms] ease-soft group-hover:scale-[1.035]"
         />
+        {video.playbackUrl ? <CardPreview src={video.playbackUrl} /> : null}
         <div
           aria-hidden
           className="absolute inset-0 bg-media/0 transition-colors duration-700 group-hover:bg-media/10"
