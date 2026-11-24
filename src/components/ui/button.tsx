@@ -14,8 +14,8 @@ const buttonVariants = cva(
       variant: {
         /** Dark ink on light pages */
         default: "bg-foreground text-surface hover:bg-foreground/85",
-        /** Light button over cinematic imagery */
-        inverse: "bg-surface text-foreground hover:bg-surface/85",
+        /** Light button over cinematic imagery — fixed colours: the image is dark in both themes */
+        inverse: "bg-[#ffffff] text-[#222521] hover:bg-[#ffffff]/85",
         /** Hairline button over imagery */
         "outline-inverse":
           "border-white/45 text-white hover:border-white hover:bg-white/10",

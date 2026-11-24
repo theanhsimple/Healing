@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { PublicHeader } from "@/components/layout/public-header";
 import { PublicFooter } from "@/components/layout/public-footer";
+import { THEME_INIT_SCRIPT } from "@/lib/theme-constants";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -35,8 +36,11 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f7f7f4",
-  colorScheme: "light",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#121411" },
+  ],
+  colorScheme: "light dark",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -45,7 +49,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="vi"
       data-scroll-behavior="smooth"
       className={`${cormorant.variable} ${inter.variable}`}
+      // data-theme is set by THEME_INIT_SCRIPT before React hydrates
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#main"

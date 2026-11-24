@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { routes } from "@/lib/routes";
 import { MobileNavLinks } from "./nav-links";
+import { ThemeSegmented } from "./theme-switcher";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -39,7 +40,8 @@ export function MobileMenu() {
           <Search aria-hidden className="size-4" strokeWidth={1.5} />
           Tìm một thước phim
         </Link>
-        <p className="mt-auto font-display text-xl italic text-muted">A little place to pause.</p>
+        <ThemeSegmented className="mt-10" />
+        <p className="mt-auto pt-8 font-display text-xl italic text-muted">A little place to pause.</p>
       </SheetContent>
     </Sheet>
   );

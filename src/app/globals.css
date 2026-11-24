@@ -41,6 +41,59 @@
 
   /* motion */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: light;
+}
+
+/*
+ * Dark theme — "the screening room". Warm near-blacks derived from
+ * --media-background rather than pure black, so imagery keeps its frame.
+ * Every text token meets WCAG AA (4.5:1) on every surface.
+ *
+ * Applied when the visitor picks "Tối" (data-theme="dark"), or picks
+ * "Theo thiết bị" (no data-theme) on a device set to dark mode.
+ * The two blocks must stay identical.
+ */
+:root[data-theme="dark"] {
+  --background: #121411;
+  --surface: #1a1d19;
+  --surface-secondary: #20241f;
+  --foreground: #ecede7;
+  --muted: #a6a9a0;
+  --muted-foreground: #8d9188;
+  --border: #2e322c;
+  --accent: #c98f78;
+  --media-background: #0c0d0b;
+  --destructive: #e0866f;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --background: #121411;
+    --surface: #1a1d19;
+    --surface-secondary: #20241f;
+    --foreground: #ecede7;
+    --muted: #a6a9a0;
+    --muted-foreground: #8d9188;
+    --border: #2e322c;
+    --accent: #c98f78;
+    --media-background: #0c0d0b;
+    --destructive: #e0866f;
+    color-scheme: dark;
+  }
+}
+
+/* `dark:` utilities follow the same rule as the tokens above. */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme]), :root:not([data-theme]) *) {
+      @slot;
+    }
+  }
 }
 
 @media (min-width: 768px) {
