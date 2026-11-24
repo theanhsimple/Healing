@@ -26,7 +26,7 @@ If one date has more than one record, the site shows `special_day` first, then
 
 ## Adding a batch
 
-1. Drop the new file here as `batch-02.json`, `batch-03.json` and so on. All `*.json` files are read, and no code change is needed.
+1. Drop the new file here as `batch-02.json`, `batch-03.json` and so on. All `batch-*.json` files are read, and no code change is needed.
 2. Rebuild and deploy (`npm run build:pages`, then push `gh-pages`).
 
 The build checks every record and **stops with a clear error** in these cases:
@@ -37,6 +37,13 @@ The build checks every record and **stops with a clear error** in these cases:
 - the same `message_id` appears twice in any batch.
 
 A category outside the guidelines list only prints a warning.
+
+## Website display choices (`display.json`)
+
+Display-only rules that sit on top of the batches, so the batch files stay as delivered.
+Right now there is one rule: for `batch-02.json` the site shows `closing_line` only for the `message_ids` listed.
+Those are the lines that read naturally, spaced out so a template does not repeat.
+A batch that is not listed shows every closing line.
 
 ## Approving
 

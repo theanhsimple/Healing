@@ -5,8 +5,9 @@ import path from "node:path";
 /**
  * Little Postcard — Master Message Library.
  *
- * Source of truth: content/daily-messages/*.json (one file per batch, kept
- * exactly as delivered by the editorial team). See
+ * Source of truth: content/daily-messages/batch-*.json (one file per batch,
+ * kept exactly as delivered by the editorial team). Website-only display
+ * choices live in display.json beside them, never in the batches. See
  * content/daily-messages/README.md and EDITORIAL_GUIDELINES.md.
  *
  * Read at build time only. Every batch is validated; a malformed record
@@ -124,11 +125,13 @@ function validate(raw: unknown, where: string): MessageRecord {
 }
 
 let cache: MessageRecord[] | undefined;
+/** message_id → batch file it came from */
+const sourceFile = new Map<string, string>();
 
 /** Every record from every batch, validated, sorted by date. */
 export function loadLibrary(): MessageRecord[] {
   if (cache) return cache;
-  const files = readdirSync(DIR).filter((f) => f.endsWith(".json")).sort();
+  const files = readdirSync(DIR).filter((f) => /^batch-.+\.json$/.test(f)).sort();
   const records: MessageRecord[] = [];
   const seen = new Map<string, string>();
 
@@ -140,6 +143,7 @@ export function loadLibrary(): MessageRecord[] {
       const dup = seen.get(rec.message_id);
       if (dup) throw new Error(`Daily message library — ${rec.message_id} appears in both ${dup} and ${file}`);
       seen.set(rec.message_id, file);
+      sourceFile.set(rec.message_id, file);
       if (!(CATEGORIES as readonly string[]).includes(rec.category))
         console.warn(`[daily messages] ${rec.message_id}: category "${rec.category}" is not in the guidelines list`);
       records.push(rec);
@@ -149,6 +153,33 @@ export function loadLibrary(): MessageRecord[] {
   return cache;
 }
 
+interface DisplayRules {
+  closing_line_display?: Record<string, { mode: "only"; message_ids: string[] }>;
+}
+
+/**
+ * display.json: per batch, which closing lines the website shows.
+ * A batch not listed shows all of its closing lines.
+ */
+function closingLineFilter(): (id: string) => boolean {
+  let rules: DisplayRules = {};
+  try {
+    rules = JSON.parse(readFileSync(path.join(DIR, "display.json"), "utf8")) as DisplayRules;
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+  }
+  const only = new Map<string, Set<string>>();
+  for (const [file, rule] of Object.entries(rules.closing_line_display ?? {})) {
+    if (rule.mode !== "only" || !Array.isArray(rule.message_ids))
+      throw new Error(`display.json: closing_line_display["${file}"] needs mode "only" and a message_ids list`);
+    only.set(file, new Set(rule.message_ids));
+  }
+  return (id) => {
+    const allowed = only.get(sourceFile.get(id) ?? "");
+    return !allowed || allowed.has(id);
+  };
+}
+
 /**
  * Records the site may show: status approved or published.
  * DAILY_MESSAGES_PREVIEW_DRAFTS=1 also shows drafts — for local review
@@ -156,7 +187,9 @@ export function loadLibrary(): MessageRecord[] {
  */
 export function getPublicMessages(): PublicMessage[] {
   const withDrafts = process.env.DAILY_MESSAGES_PREVIEW_DRAFTS === "1";
-  return loadLibrary()
+  const library = loadLibrary();
+  const showClosing = closingLineFilter();
+  return library
     .filter((r) => withDrafts || PUBLISHABLE.has(r.status))
     .map((r) => ({
       id: r.message_id,
@@ -165,7 +198,7 @@ export function getPublicMessages(): PublicMessage[] {
       category: r.category,
       title: r.title,
       message: r.message,
-      closingLine: r.closing_line,
+      closingLine: showClosing(r.message_id) ? r.closing_line : null,
       mood: r.mood,
       relatedEpisodeId: r.related_episode_id,
       specialDay: r.special_day,

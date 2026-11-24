@@ -2259,7 +2259,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270523",
@@ -2274,7 +2274,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270524",
@@ -2289,7 +2289,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270525",
@@ -2304,7 +2304,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270526",
@@ -2319,7 +2319,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270527",
@@ -2334,7 +2334,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270528",
@@ -2349,7 +2349,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270529",
@@ -2364,7 +2364,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270530",
@@ -2379,7 +2379,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270531",
@@ -2394,7 +2394,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác ký ức tuổi thơ, lao động, gia đình và những chuyến đi đầu hè. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270601",
@@ -2409,7 +2409,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270602",
@@ -2424,7 +2424,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270603",
@@ -2439,7 +2439,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270604",
@@ -2454,7 +2454,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270605",
@@ -2469,7 +2469,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270606",
@@ -2484,7 +2484,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270607",
@@ -2499,7 +2499,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270608",
@@ -2514,7 +2514,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270609",
@@ -2529,7 +2529,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270610",
@@ -2544,7 +2544,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270611",
@@ -2559,7 +2559,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270612",
@@ -2574,7 +2574,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270613",
@@ -2589,7 +2589,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270614",
@@ -2604,7 +2604,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270615",
@@ -2619,7 +2619,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270616",
@@ -2634,7 +2634,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270617",
@@ -2649,7 +2649,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270618",
@@ -2664,7 +2664,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270619",
@@ -2679,7 +2679,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270620",
@@ -2694,7 +2694,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270621",
@@ -2724,7 +2724,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270623",
@@ -2739,7 +2739,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270624",
@@ -2754,7 +2754,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270625",
@@ -2769,7 +2769,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270626",
@@ -2784,7 +2784,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270627",
@@ -2799,7 +2799,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270628",
@@ -2814,7 +2814,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270629",
@@ -2829,7 +2829,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270630",
@@ -2844,7 +2844,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Tập trung âm nhạc, thiên nhiên, ánh sáng, du lịch và những trải nghiệm ngoài trời phù hợp. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270701",
@@ -2859,7 +2859,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270702",
@@ -2874,7 +2874,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270703",
@@ -2994,7 +2994,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270711",
@@ -3009,7 +3009,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270712",
@@ -3024,7 +3024,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270713",
@@ -3039,7 +3039,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270714",
@@ -3054,7 +3054,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270715",
@@ -3069,7 +3069,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270716",
@@ -3084,7 +3084,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270717",
@@ -3099,7 +3099,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270718",
@@ -3114,7 +3114,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270719",
@@ -3129,7 +3129,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270720",
@@ -3144,7 +3144,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270721",
@@ -3159,7 +3159,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270722",
@@ -3174,7 +3174,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270723",
@@ -3189,7 +3189,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270724",
@@ -3204,7 +3204,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270725",
@@ -3219,7 +3219,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270726",
@@ -3234,7 +3234,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270727",
@@ -3264,7 +3264,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270729",
@@ -3279,7 +3279,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270730",
@@ -3309,7 +3309,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác những ngày mưa, nhịp sống chậm, tình bạn và những nơi trú chân trong thành phố. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270801",
@@ -3324,7 +3324,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270802",
@@ -3339,7 +3339,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270803",
@@ -3354,7 +3354,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270804",
@@ -3369,7 +3369,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270805",
@@ -3384,7 +3384,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270806",
@@ -3399,7 +3399,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270807",
@@ -3414,7 +3414,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270808",
@@ -3429,7 +3429,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270809",
@@ -3444,7 +3444,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270810",
@@ -3459,7 +3459,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270811",
@@ -3474,7 +3474,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270812",
@@ -3489,7 +3489,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270813",
@@ -3504,7 +3504,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270814",
@@ -3519,7 +3519,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270815",
@@ -3534,7 +3534,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270816",
@@ -3549,7 +3549,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270817",
@@ -3564,7 +3564,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270818",
@@ -3579,7 +3579,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270819",
@@ -3594,7 +3594,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270820",
@@ -3609,7 +3609,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270821",
@@ -3624,7 +3624,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270822",
@@ -3639,7 +3639,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270823",
@@ -3654,7 +3654,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270824",
@@ -3669,7 +3669,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270825",
@@ -3684,7 +3684,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270826",
@@ -3699,7 +3699,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270827",
@@ -3714,7 +3714,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270828",
@@ -3729,7 +3729,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270829",
@@ -3744,7 +3744,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270830",
@@ -3759,7 +3759,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270831",
@@ -3774,7 +3774,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Chú ý mùa tựu trường, việc học suốt đời, ký ức và sự tò mò. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270901",
@@ -3789,7 +3789,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270902",
@@ -3819,7 +3819,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270904",
@@ -3834,7 +3834,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270905",
@@ -3849,7 +3849,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270906",
@@ -3864,7 +3864,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270907",
@@ -3879,7 +3879,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270908",
@@ -3894,7 +3894,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270909",
@@ -3909,7 +3909,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270910",
@@ -3924,7 +3924,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270911",
@@ -3939,7 +3939,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270912",
@@ -3969,7 +3969,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270914",
@@ -3984,7 +3984,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270915",
@@ -4014,7 +4014,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270917",
@@ -4029,7 +4029,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270918",
@@ -4044,7 +4044,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270919",
@@ -4059,7 +4059,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270920",
@@ -4074,7 +4074,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270921",
@@ -4104,7 +4104,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270923",
@@ -4119,7 +4119,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270924",
@@ -4134,7 +4134,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270925",
@@ -4149,7 +4149,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270926",
@@ -4194,7 +4194,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270929",
@@ -4209,7 +4209,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20270930",
@@ -4224,7 +4224,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Có thể khai thác mùa thu, văn hóa, kiến trúc, lịch sử và những thay đổi trong nhịp sống. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271001",
@@ -4254,7 +4254,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271003",
@@ -4269,7 +4269,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271004",
@@ -4284,7 +4284,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271005",
@@ -4299,7 +4299,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271006",
@@ -4314,7 +4314,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271007",
@@ -4329,7 +4329,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271008",
@@ -4344,7 +4344,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271009",
@@ -4359,7 +4359,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271010",
@@ -4389,7 +4389,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271012",
@@ -4404,7 +4404,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271013",
@@ -4419,7 +4419,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271014",
@@ -4434,7 +4434,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271015",
@@ -4449,7 +4449,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271016",
@@ -4464,7 +4464,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271017",
@@ -4479,7 +4479,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271018",
@@ -4494,7 +4494,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271019",
@@ -4509,7 +4509,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271020",
@@ -4539,7 +4539,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271022",
@@ -4554,7 +4554,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271023",
@@ -4569,7 +4569,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271024",
@@ -4584,7 +4584,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271025",
@@ -4599,7 +4599,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271026",
@@ -4614,7 +4614,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271027",
@@ -4629,7 +4629,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271028",
@@ -4644,7 +4644,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271029",
@@ -4659,7 +4659,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271030",
@@ -4674,7 +4674,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271031",
@@ -4689,7 +4689,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Ưu tiên câu chuyện về con người, lòng biết ơn, phụ nữ, sáng tạo và sự tử tế. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271101",
@@ -4704,7 +4704,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271102",
@@ -4719,7 +4719,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271103",
@@ -4734,7 +4734,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271104",
@@ -4749,7 +4749,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271105",
@@ -4764,7 +4764,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271106",
@@ -4779,7 +4779,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271107",
@@ -4794,7 +4794,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271108",
@@ -4809,7 +4809,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271109",
@@ -4824,7 +4824,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271110",
@@ -4839,7 +4839,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271111",
@@ -4854,7 +4854,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271112",
@@ -4869,7 +4869,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271113",
@@ -4899,7 +4899,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271115",
@@ -4914,7 +4914,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271116",
@@ -4929,7 +4929,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271117",
@@ -4944,7 +4944,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271118",
@@ -4959,7 +4959,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271119",
@@ -4974,7 +4974,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271120",
@@ -5004,7 +5004,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271122",
@@ -5019,7 +5019,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271123",
@@ -5034,7 +5034,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271124",
@@ -5064,7 +5064,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271126",
@@ -5079,7 +5079,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271127",
@@ -5094,7 +5094,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271128",
@@ -5109,7 +5109,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271129",
@@ -5124,7 +5124,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271130",
@@ -5139,7 +5139,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Khai thác ký ức, người thầy, nghệ thuật, những điều đã học và các kết nối. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271201",
@@ -5154,7 +5154,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271202",
@@ -5169,7 +5169,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271203",
@@ -5184,7 +5184,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271204",
@@ -5199,7 +5199,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271205",
@@ -5214,7 +5214,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271206",
@@ -5229,7 +5229,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271207",
@@ -5244,7 +5244,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271208",
@@ -5259,7 +5259,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271209",
@@ -5274,7 +5274,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271210",
@@ -5289,7 +5289,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271211",
@@ -5304,7 +5304,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271212",
@@ -5319,7 +5319,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271213",
@@ -5334,7 +5334,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271214",
@@ -5349,7 +5349,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271215",
@@ -5364,7 +5364,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271216",
@@ -5379,7 +5379,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271217",
@@ -5394,7 +5394,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271218",
@@ -5409,7 +5409,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271219",
@@ -5424,7 +5424,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271220",
@@ -5439,7 +5439,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271221",
@@ -5469,7 +5469,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày. Đã lược câu dẫn chung để giữ nội dung trong giới hạn 40–90 từ.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271223",
@@ -5484,7 +5484,7 @@
       "related_episode_id": null,
       "special_day": null,
       "editorial_note": "Nhìn lại năm bằng chi tiết cụ thể, mùa lễ hội, sự ấm áp và những dự định vừa sức. Cần biên tập lại nếu chủ đề trùng với tập Healing phát hành trong ngày.",
-      "status": "approved"
+      "status": "draft"
     },
     {
       "message_id": "LP-DM-20271224",
