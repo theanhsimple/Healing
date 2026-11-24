@@ -277,6 +277,11 @@
   .postcard-stamp > div {
     background: color-mix(in srgb, var(--accent) 10%, var(--paper));
   }
+  .postcard-stamp--lg {
+    width: 7.5rem;
+    height: 9.25rem;
+    padding: 6px;
+  }
 
   /* ——— Envelope (home "Thông điệp hôm nay") ——— */
   .envelope {

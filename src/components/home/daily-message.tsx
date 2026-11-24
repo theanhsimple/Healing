@@ -132,6 +132,11 @@ export function DailyMessage() {
             <span aria-hidden className="envelope-letter" />
             <span aria-hidden className="envelope-folds" />
             <span aria-hidden className="envelope-flap" />
+            {message ? (
+              <span aria-hidden className="absolute top-3 right-3 z-[5] origin-top-right scale-[0.72] rotate-[4deg] sm:top-4 sm:right-4 sm:scale-[0.8]">
+                <PostcardStamp category={message.category} number={day} />
+              </span>
+            ) : null}
             <span aria-hidden className="envelope-seal">
               {message ? <CategoryIcon category={message.category} className="size-5" /> : null}
             </span>
@@ -171,7 +176,7 @@ export function DailyMessage() {
               {message ? (
                 <article data-message-id={message.id}>
                   <div aria-hidden className="pointer-events-none float-right -mt-6 -mr-2 ml-4 sm:-mt-4 sm:-mr-4">
-                    <PostcardStamp category={message.category} number={day} className="rotate-[3deg] max-sm:scale-90" />
+                    <PostcardStamp category={message.category} number={day} size="lg" className="rotate-[3deg] max-sm:scale-[0.8] max-sm:origin-top-right" />
                   </div>
                   <p className="eyebrow text-accent">{formatMessageDate(message.date)}</p>
                   <Dialog.Title className="mt-3 font-display text-display-sm font-medium italic text-accent">

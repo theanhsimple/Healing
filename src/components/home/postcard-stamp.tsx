@@ -17,6 +17,7 @@ import {
   HeartHandshake,
 } from "lucide-react";
 import { cn } from "cn";
+import { asset } from "@/lib/asset";
 
 /** One small line illustration per library category (Editorial Guidelines §4). */
 const CATEGORY_ICON: Record<string, LucideIcon> = {
@@ -42,15 +43,38 @@ export function CategoryIcon({ category, className }: { category: string; classN
   return <Icon aria-hidden className={className} strokeWidth={1.5} />;
 }
 
-/** Perforated postage stamp showing the message's category. */
-export function PostcardStamp({ category, number, className }: { category: string; number: string; className?: string }) {
-  const Icon = CATEGORY_ICON[category] ?? Feather;
+/** Category → hand-painted stamp illustration in public/images/stamps (generated with Higgsfield). */
+function stampImage(category: string) {
+  const slug = category.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+  return asset(`/images/stamps/${slug in KNOWN ? slug : "a-quiet-mind"}.jpg`);
+}
+const KNOWN = Object.fromEntries(
+  Object.keys(CATEGORY_ICON).map((c) => [c.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, ""), true]),
+);
+
+/** Perforated postage stamp: a small gouache painting for the message's category, with the day as its value. */
+export function PostcardStamp({
+  category,
+  number,
+  size = "sm",
+  className,
+}: {
+  category: string;
+  number: string;
+  size?: "sm" | "lg";
+  className?: string;
+}) {
   return (
-    <div aria-hidden className={cn("postcard-stamp", className)}>
-      <div className="flex h-full flex-col items-center justify-between border border-accent/35 px-1.5 pt-2 pb-1.5 text-accent">
-        <span className="self-end font-display text-sm leading-none tabular-nums">{number}</span>
-        <Icon className="size-7" strokeWidth={1.25} />
-        <span className="text-center text-[0.5rem] leading-tight tracking-[0.14em] uppercase">{category}</span>
+    <div aria-hidden className={cn("postcard-stamp", size === "lg" && "postcard-stamp--lg", className)}>
+      <div className="relative h-full overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element -- tiny decorative image, static export */}
+        <img src={stampImage(category)} alt="" loading="lazy" className="size-full object-cover" />
+        <span className="absolute top-1 right-1 bg-[#fdfbf6]/90 px-1 font-display text-[0.8rem] leading-tight text-[#7a4a39] tabular-nums">
+          {number}
+        </span>
+        <span className="absolute inset-x-0 bottom-0 bg-[#fdfbf6]/88 px-1 py-0.5 text-center text-[0.45rem] leading-tight tracking-[0.12em] text-[#7a4a39] uppercase">
+          {category}
+        </span>
       </div>
     </div>
   );
