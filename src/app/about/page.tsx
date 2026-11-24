@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { routes } from "@/lib/routes";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "Giới thiệu",
@@ -14,25 +15,25 @@ export const metadata: Metadata = {
 const pillars = [
   {
     title: "Thiên nhiên",
-    image: "/images/editorial/forest.jpg",
+    image: asset("/images/editorial/forest.jpg"),
     alt: "Nắng chiều xuyên qua rừng thông",
     text: "Rừng, núi, mặt hồ, sương sớm. Thiên nhiên không vội, và khi đứng trước nó, ta cũng thôi vội theo.",
   },
   {
     title: "Âm nhạc",
-    image: "/images/editorial/sea.jpg",
+    image: asset("/images/editorial/sea.jpg"),
     alt: "Mặt biển lên xuống chậm rãi",
     text: "Tiếng nước chảy, tiếng sóng, tiếng gió qua tán lá. Có những thước phim nên được nghe nhiều hơn là xem.",
   },
   {
     title: "Nghệ thuật",
-    image: "/images/editorial/layered-mountains.jpg",
+    image: asset("/images/editorial/layered-mountains.jpg"),
     alt: "Những lớp núi nhạt dần trong ánh hoàng hôn",
     text: "Ánh sáng, màu sắc, bố cục — nghệ thuật vẫn ở đó trong đời thường, chỉ chờ một ánh nhìn đủ chậm.",
   },
   {
     title: "Cuộc sống",
-    image: "/images/editorial/cabin.jpg",
+    image: asset("/images/editorial/cabin.jpg"),
     alt: "Căn nhà nhỏ mái đỏ trên đồi",
     text: "Một mái nhà, một buổi chiều, một con đường quen. Những điều nhỏ bé làm nên cả một đời người.",
   },
@@ -78,7 +79,7 @@ export default function AboutPage() {
         <figure>
           <div className="relative aspect-[4/5] overflow-hidden bg-media sm:aspect-[16/9] lg:aspect-[21/9]">
             <Image
-              src="/images/editorial/fog-hills.jpg"
+              src={asset("/images/editorial/fog-hills.jpg")}
               alt="Sương sớm phủ trên những sườn đồi khi mặt trời vừa lên"
               fill
               preload
@@ -185,7 +186,7 @@ export default function AboutPage() {
           <div className="col-span-4 md:col-span-8 lg:col-span-4">
             <div className="relative aspect-[3/4] overflow-hidden bg-media max-lg:hidden">
               <Image
-                src="/images/editorial/still-lake.jpg"
+                src={asset("/images/editorial/still-lake.jpg")}
                 alt="Núi soi bóng xuống mặt hồ phẳng lặng"
                 fill
                 sizes="(min-width: 1376px) 405px, 30vw"

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { routes } from "@/lib/routes";
+import { asset } from "@/lib/asset";
 
 interface HeroSectionProps {
   /** Link target for "Xem postcard mới nhất". */
@@ -15,7 +16,7 @@ export function HeroSection({ latestHref }: HeroSectionProps) {
       <Container>
         <div className="relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[4/3] lg:aspect-video">
           <Image
-            src="/images/hero-valley.jpg"
+            src={asset("/images/hero-valley.jpg")}
             alt="Thung lũng phủ sương, một người đứng nhỏ bé trên mỏm đá nhìn ra xa"
             fill
             preload

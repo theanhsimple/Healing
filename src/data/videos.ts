@@ -13,6 +13,7 @@
  * their thumbnails are Unsplash photos (unsplash.com/license).
  */
 import type { MediaCredit, Video } from "@/types/video";
+import { asset } from "@/lib/asset";
 
 const BY_SA_4 = { license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" };
 const BY_4 = { license: "CC BY 4.0", licenseUrl: "https://creativecommons.org/licenses/by/4.0/" };
@@ -35,8 +36,8 @@ const credits = {
 } satisfies Record<string, MediaCredit>;
 
 const media = (slug: string) => ({
-  thumbnailUrl: `/images/postcards/${slug}.jpg`,
-  playbackUrl: `/media/${slug}.mp4`,
+  thumbnailUrl: asset(`/images/postcards/${slug}.jpg`),
+  playbackUrl: asset(`/media/${slug}.mp4`),
 });
 
 const published = { status: "published", visibility: "public", isFeatured: false } as const;
@@ -265,7 +266,7 @@ export const videos: Video[] = [
     title: "Bình minh trên bãi cát (bản nháp)",
     shortDescription: "Bản nháp chưa xuất bản.",
     description: "Bản nháp chưa xuất bản.",
-    thumbnailUrl: "/images/postcards/binh-minh-tren-bai-cat.jpg",
+    thumbnailUrl: asset("/images/postcards/binh-minh-tren-bai-cat.jpg"),
     durationSeconds: 60,
     categoryId: "cat_art",
     moodIds: ["mood_hope"],
@@ -280,7 +281,7 @@ export const videos: Video[] = [
     title: "Một buổi sáng ở vịnh (riêng tư)",
     shortDescription: "Thước phim riêng tư.",
     description: "Thước phim riêng tư.",
-    thumbnailUrl: "/images/postcards/mot-buoi-sang-o-vinh.jpg",
+    thumbnailUrl: asset("/images/postcards/mot-buoi-sang-o-vinh.jpg"),
     durationSeconds: 60,
     categoryId: "cat_travel",
     moodIds: ["mood_relax"],
