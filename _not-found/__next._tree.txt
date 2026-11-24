@@ -1,4 +1,4 @@
 :HL["/Healing/_next/static/chunks/0s99fnkki-433.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":64,"c":"$Q2"}]]
-0:{"b":"m8cY3R3amvZytODCXcS6c","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"UCppi7UM5eR1jCH4OCk_j","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
