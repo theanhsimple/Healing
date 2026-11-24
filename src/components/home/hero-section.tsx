@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { asset } from "@/lib/asset";
+import { HeroVideo } from "./hero-video";
 
 interface HeroLink {
   href: string;
@@ -21,21 +21,16 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
     <section aria-labelledby="hero-title" className="pt-3 md:pt-6 lg:pt-8">
       <Container>
         <div className="relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[16/10] lg:aspect-[21/9]">
-          <Image
-            src={asset("/images/hero-valley.jpg")}
-            alt="Thung lũng phủ sương, một người đứng nhỏ bé trên mỏm đá nhìn ra xa"
-            fill
-            preload
-            quality={85}
-            sizes="(min-width: 1376px) 1280px, 100vw"
-            className="-z-10 object-cover object-[58%_50%] hero-drift lg:object-center"
+          <HeroVideo
+            src={asset("/media/hero-be-tre.mp4")}
+            poster={asset("/images/hero-be-tre.jpg")}
+            className="absolute inset-0 -z-10 size-full object-cover object-[50%_60%]"
           />
-          {/* Drifting mist (decorative, motion-safe only) */}
-          <div aria-hidden className="absolute -inset-x-1/4 inset-y-0 -z-10 hero-mist" />
+          <span className="sr-only">Một chiếc bè tre trôi chậm trên mặt sông phẳng lặng, núi xanh và mây phía xa</span>
           {/* Subtle scrim: keeps white text legible without flattening the image */}
           <div
             aria-hidden
-            className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(23,25,22,0.72)_0%,rgba(23,25,22,0.32)_42%,rgba(23,25,22,0.08)_70%)]"
+            className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(23,25,22,0.8)_0%,rgba(23,25,22,0.5)_45%,rgba(23,25,22,0.35)_100%)] sm:bg-[linear-gradient(to_top,rgba(23,25,22,0.72)_0%,rgba(23,25,22,0.32)_42%,rgba(23,25,22,0.08)_70%)]"
           />
 
           <div className="flex h-full flex-col justify-end p-6 sm:p-10 lg:p-12">
@@ -68,7 +63,7 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
             aria-hidden
             className="absolute top-6 right-6 hidden text-[0.6875rem] tracking-[0.18em] text-white/65 uppercase sm:block lg:top-auto lg:right-14 lg:bottom-14"
           >
-            N° 01 — Thung lũng sương
+            N° 01 — Bè tre trên sông lặng
           </p>
         </div>
       </Container>

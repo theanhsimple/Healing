@@ -300,8 +300,8 @@ export default function AboutPage() {
             </Button>
           </div>
           <p className="mt-16 max-w-md text-xs leading-relaxed text-muted">
-            Ảnh minh hoạ từ Unsplash. Thước phim từ Wikimedia Commons — tác giả và giấy phép được ghi
-            trên trang của từng thước phim. Nhạc nền: “Four-Note Motif”.
+            Hình ảnh và thước phim từ Mixkit (giấy phép Mixkit Free License) — nguồn của từng thước phim
+            được ghi trên trang của nó. Nhạc nền: “Four-Note Motif”.
           </p>
         </Container>
       </section>

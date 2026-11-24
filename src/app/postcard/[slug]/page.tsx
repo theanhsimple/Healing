@@ -194,7 +194,7 @@ async function PostcardView({ params }: Pick<PageProps<"/postcard/[slug]">, "par
               ) : (
                 video.credit.license
               )}
-              , qua Wikimedia Commons. Đã trích đoạn và chuyển định dạng.
+              . Đã trích đoạn và chuyển định dạng.
             </p>
           ) : null}
         </aside>

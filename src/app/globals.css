@@ -185,35 +185,6 @@
   }
 }
 
-@keyframes hero-drift {
-  from {
-    transform: scale(1.02);
-  }
-  to {
-    transform: scale(1.09) translate(-1.2%, -0.8%);
-  }
-}
-
-@keyframes hero-mist {
-  from {
-    transform: translateX(-14%);
-    opacity: 0.55;
-  }
-  to {
-    transform: translateX(14%);
-    opacity: 1;
-  }
-}
-
-@keyframes envelope-float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
 /* translate(-50%,-50%) centring comes from the `translate` property, so only `transform` animates */
 @keyframes letter-in {
   from {
@@ -223,6 +194,13 @@
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes letter-out {
+  to {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
   }
 }
 
@@ -327,8 +305,8 @@
     box-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 26px 50px -30px rgb(60 40 20 / 0.45);
     transition: transform 0.6s var(--ease-out-soft), box-shadow 0.6s var(--ease-out-soft);
   }
-  .envelope:not(:disabled):hover .envelope-body,
-  .envelope:focus-visible .envelope-body {
+  .envelope:focus-visible .envelope-body,
+  .envelope:not(:disabled):active .envelope-body {
     transform: translateY(-4px) rotate(-0.6deg);
     box-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 34px 60px -30px rgb(60 40 20 / 0.5);
   }
@@ -398,37 +376,37 @@
     transform: translate(-50%, -50%);
     transition: transform 0.4s var(--ease-out-soft), opacity 0.3s;
   }
-  .envelope:not(:disabled):hover .envelope-seal {
-    transform: translate(-50%, -50%) scale(1.06);
+  @media (hover: hover) and (pointer: fine) {
+    .envelope:not(:disabled):hover .envelope-body {
+      transform: translateY(-4px) rotate(-0.6deg);
+      box-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 34px 60px -30px rgb(60 40 20 / 0.5);
+    }
+    .envelope:not(:disabled):hover .envelope-seal {
+      transform: translate(-50%, -50%) scale(1.06);
+    }
+    .envelope:not(:disabled):hover .envelope-flap {
+      transform: rotateX(18deg);
+    }
+  }
+  .envelope:not(:disabled):active .envelope-body {
+    transform: scale(0.98);
   }
   .envelope[data-state="opening"] .envelope-seal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.6);
   }
   @media (prefers-reduced-motion: no-preference) {
-    .envelope:not(:disabled):not([data-state="opening"]) .envelope-body {
-      animation: envelope-float 6s ease-in-out infinite;
-    }
-    .envelope:not(:disabled):hover .envelope-body {
-      animation: none;
+    .envelope-body {
+      animation: rise 0.9s var(--ease-out-soft) both;
     }
     .letter-dialog[data-state="open"] {
-      animation: letter-in 0.55s var(--ease-out-soft) both;
+      animation: letter-in 0.5s var(--ease-out-soft) both;
+    }
+    .letter-dialog[data-state="closed"] {
+      animation: letter-out 0.18s ease-out both;
     }
   }
 
-  /* Hero: very slow drift of the photo and a band of mist passing through. */
-  .hero-drift {
-    animation: hero-drift 38s ease-in-out infinite alternate;
-  }
-  .hero-mist {
-    background:
-      radial-gradient(40% 30% at 30% 62%, rgb(255 255 255 / 0.22), transparent 70%),
-      radial-gradient(35% 25% at 72% 70%, rgb(255 255 255 / 0.16), transparent 70%),
-      radial-gradient(50% 20% at 50% 80%, rgb(255 255 255 / 0.14), transparent 70%);
-    filter: blur(8px);
-    animation: hero-mist 46s ease-in-out infinite alternate;
-  }
 
   /* 4 / 8 / 12-column editorial grid */
   .editorial-grid {
