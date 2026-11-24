@@ -2,7 +2,7 @@
 
 This folder is the official source of the daily messages on the home page.
 Each `batch-XX.json` file is kept **exactly as the editorial team delivered it**.
-The website never rewrites the content. Editorial rules (current version: v1.2; older versions are in git history) are in
+The website never rewrites the content. Editorial rules (current version: v1.3; older versions are in git history) are in
 [`EDITORIAL_GUIDELINES.md`](./EDITORIAL_GUIDELINES.md).
 
 ## How the site uses it

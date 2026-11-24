@@ -1,58 +1,28 @@
-# LITTLE POSTCARD
-## Editorial Guidelines · Master Library v1.2
+# Little Postcard — Editorial Guidelines v1.3
 
-### Purpose
-Little Postcard sends one small observation, story, discovery or invitation each day. It should make readers notice something, not tell them how they must feel.
+## Editorial intent
+Little Postcard is a small daily pause, not a daily instruction to feel better. The voice is observant, humane, curious and grounded. It must not assume that the reader is sad, lonely, overwhelmed or seeking healing.
 
-### Voice
-- Vietnamese that sounds natural when read aloud.
-- Warm, observant, thoughtful and grounded.
-- Prefer concrete details over abstract motivational language.
-- Vary sentence rhythm and content form.
-- Allow curiosity, humour, wonder and ordinary pleasure alongside reflective topics.
+## Content rules
+- Each entry offers one clear observation, story, question or small invitation.
+- Avoid generic openings and endings that can be pasted onto any topic.
+- Avoid moralizing, forced optimism and familiar self-help slogans.
+- Titles should read like editorial headlines. Do not append dates or phrases such as “góc nhìn khác”.
+- Consecutive days should vary in category and in the kind of experience offered.
+- Special-day content must directly relate to the observance named in `special_day`.
+- `closing_line` is a distinct final note for that entry, not a reusable category slogan.
+- Prefer concrete details over abstract advice.
+- Treat all entries as `draft` until a human editor approves them.
 
-### Avoid
-- Generic motivational quotes and repeated healing clichés.
-- Assuming every reader is sad, lonely, heartbroken or in need of advice.
-- Moralizing, preaching or forcing a grand conclusion.
-- Invented facts or unverified historical claims.
-- Rewriting a message only by swapping synonyms.
+## Data contract
+Each record retains:
+`message_id`, `publish_date`, `content_type`, `category`, `title`, `message`, `closing_line`, `mood`, `visual_direction`, `related_episode_id`, `special_day`, `editorial_note`, `status`.
 
-### Content categories
-A Quiet Mind; The Art of Living; Nature Notes; The World of Art; Little Journeys; Human Stories; Time & Memory; Music & Sound; Creative Life; Small Joys; Relationships & Connections; Change & New Beginnings; Science & Curiosity; Philosophy & Perspective; Tomorrow & Possibility.
-
-### Data fields
-message_id, publish_date, content_type, category, title, message, closing_line, mood, visual_direction, related_episode_id, special_day, editorial_note, status.
-
-### Length and closing line
-- `message`: 40–90 whitespace-separated words.
-- `closing_line`: populate for consistency with Batch 01. It should add a small afterthought or invitation, not repeat the last sentence.
-- A closing line should sound natural and should not become a compulsory slogan.
-
-### Special days
-- Lunar and movable dates must be checked against a reliable Vietnamese lunar calendar and official announcements.
-- Keep the event label in `special_day`; use `content_type = special_day` when the message is specifically written for that occasion.
-- Do not assume every reader celebrates in the same way or has the same family circumstances.
-- For history and remembrance days, use respectful, fact-based language and avoid turning the day into generic inspiration.
-
-### Episode messages
-Only set `related_episode_id` when episode information is confirmed. On release days, the daily message should connect to the episode while remaining useful to readers who have not listened.
-
-### Publishing
-- All imported records remain `draft` until reviewed.
-- Do not display `editorial_note` or `status` to end users.
-- Compare each daily message with the actual episode release calendar.
-- Verify factual claims in science, history, culture and geography.
-- Check for semantic duplication, not only identical titles.
-
-### Quality checklist
-1. Is there a specific observation or idea?
-2. Is the wording natural when read aloud?
-3. Is it distinct from recent messages in meaning?
-4. Does it avoid prescribing emotions?
-5. Does the closing line add something rather than repeat?
-6. Is the visual direction appropriate?
-7. Are factual claims and dates verified?
-
-### Batch 02 revision note
-Version 1.2 shortens the 27 messages previously over 90 words, fills all 366 closing_line fields, and adds dedicated editorial messages for key Vietnamese dates in 2027. All records remain drafts.
+## v1.3 QA
+- 366 records covering 2026-12-24 through 2027-12-24.
+- Unique message IDs, dates, titles and closing lines.
+- Removed templated title suffixes and date suffixes.
+- Corrected adjacent category collisions across the full calendar.
+- Rewrote observance-day entries where the message did not match the occasion.
+- Message length remains within the 40–90 word editorial target.
+- Status remains `draft`; human approval is still required before publication.
