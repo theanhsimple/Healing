@@ -264,7 +264,8 @@ export const podcastEpisodes: PodcastEpisode[] = [
       height: 1448,
     },
     audio: {
-      src: asset("/audio/podcast/tap-01-nghe-thuat-khong-nghi-qua-nhieu.mp3"),
+      // ?v= changes with each re-mix so browsers fetch the new file
+      src: asset("/audio/podcast/tap-01-nghe-thuat-khong-nghi-qua-nhieu.mp3?v=2"),
       durationSeconds: 448,
     },
     script: episode01Script,
