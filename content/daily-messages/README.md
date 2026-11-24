@@ -3,7 +3,8 @@
 This folder is the official source of the daily messages on the home page.
 Each `batch-XX.json` file is kept **exactly as the editorial team delivered it**.
 The website never rewrites the content. Editorial rules (current version: v1.3; batch 02 is at v1.4 (web-editor revision, see its `web_editor_revision`); older versions are in git history) are in
-[`EDITORIAL_GUIDELINES.md`](./EDITORIAL_GUIDELINES.md).
+[`EDITORIAL_GUIDELINES.md`](./EDITORIAL_GUIDELINES.md),
+plus [`PSYCHOLOGY_LENS.md`](./PSYCHOLOGY_LENS.md) for all new content (how to bring psychology in, gently).
 
 ## How the site uses it
 
