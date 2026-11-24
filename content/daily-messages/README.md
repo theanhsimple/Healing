@@ -2,7 +2,7 @@
 
 This folder is the official source of the daily messages on the home page.
 Each `batch-XX.json` file is kept **exactly as the editorial team delivered it**.
-The website never rewrites the content. Editorial rules (current version: v1.3; older versions are in git history) are in
+The website never rewrites the content. Editorial rules (current version: v1.3; batch 02 is at v1.4 (web-editor revision, see its `web_editor_revision`); older versions are in git history) are in
 [`EDITORIAL_GUIDELINES.md`](./EDITORIAL_GUIDELINES.md).
 
 ## How the site uses it
@@ -38,12 +38,11 @@ The build checks every record and **stops with a clear error** in these cases:
 
 A category outside the guidelines list only prints a warning.
 
-## Website display choices (`display.json`)
+## Website display choices (`display.json`, optional)
 
 Display-only rules that sit on top of the batches, so the batch files stay as delivered.
-Right now there is one rule: for `batch-02.json` the site shows `closing_line` only for the `message_ids` listed.
-Those are the lines that read naturally, spaced out so a template does not repeat.
-A batch that is not listed shows every closing line.
+For example, `closing_line_display` → `{"batch-02.json": {"mode": "only", "message_ids": [...]}}` shows that batch's closing lines only for the listed ids.
+There are currently no rules (no file), so every closing line is shown.
 
 ## Approving
 
