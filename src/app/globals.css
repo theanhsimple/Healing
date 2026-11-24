@@ -244,6 +244,11 @@
     }
   }
 
+  /* Cormorant defaults to old-style figures, which make "01" read as "oı". */
+  .font-display {
+    font-variant-numeric: lining-nums;
+  }
+
   .eyebrow {
     font-size: var(--text-eyebrow);
     line-height: var(--text-eyebrow--line-height);

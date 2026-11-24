@@ -20,7 +20,7 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
   return (
     <section aria-labelledby="hero-title" className="pt-3 md:pt-6 lg:pt-8">
       <Container>
-        <div className="relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[4/3] lg:aspect-video">
+        <div className="relative isolate aspect-[4/5] overflow-hidden bg-media sm:aspect-[16/10] lg:aspect-[21/9]">
           <Image
             src={asset("/images/hero-valley.jpg")}
             alt="Thung lũng phủ sương, một người đứng nhỏ bé trên mỏm đá nhìn ra xa"
@@ -36,7 +36,7 @@ export function HeroSection({ primary, secondary }: HeroSectionProps) {
             className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(23,25,22,0.72)_0%,rgba(23,25,22,0.32)_42%,rgba(23,25,22,0.08)_70%)]"
           />
 
-          <div className="flex h-full flex-col justify-end p-6 sm:p-10 lg:p-14">
+          <div className="flex h-full flex-col justify-end p-6 sm:p-10 lg:p-12">
             <div className="animate-on-load max-w-[40rem]">
               <p className="font-display text-lg italic text-white/80 md:text-xl">
                 A little place to pause.

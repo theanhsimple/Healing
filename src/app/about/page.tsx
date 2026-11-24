@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { author } from "@/data/author";
 import { routes } from "@/lib/routes";
 import { asset } from "@/lib/asset";
 
@@ -125,6 +127,55 @@ export default function AboutPage() {
               một buổi hoàng hôn. Không lời bình, không câu chuyện phải theo dõi — chỉ có khoảnh khắc
               ấy, nguyên vẹn như lúc nó diễn ra.
             </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* The person behind it */}
+      <section
+        id="rabbit"
+        aria-labelledby="rabbit-title"
+        className="scroll-mt-[calc(var(--header-height)+16px)] border-t border-border py-20 md:py-28 lg:py-32"
+      >
+        <Container className="editorial-grid items-center gap-y-10">
+          <div className="col-span-4 md:col-span-3 lg:col-span-4">
+            <div className="relative aspect-[3/4] overflow-hidden bg-media">
+              <Image
+                src={author.photo.src}
+                alt={author.photo.alt}
+                fill
+                sizes="(min-width: 1376px) 405px, (min-width: 1024px) 30vw, (min-width: 768px) 36vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="col-span-4 md:col-span-5 lg:col-span-7 lg:col-start-6">
+            <p className="eyebrow text-accent">Người gửi những tấm bưu thiếp</p>
+            <h2 id="rabbit-title" className="mt-4 font-display text-display-lg font-medium">
+              {author.name}
+            </h2>
+            <p className="mt-2 text-sm text-muted">
+              {author.role} · Lá bài {author.card}
+            </p>
+            <p className="mt-8 font-display text-display-sm leading-snug italic text-balance">
+              “{author.title}”
+            </p>
+            <div className="mt-8 flex flex-col gap-5 text-[1.0625rem] leading-relaxed text-foreground/80">
+              <p>{author.bio}</p>
+              <p>{author.here}</p>
+            </div>
+            <a
+              href={author.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/arrow mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-foreground underline-offset-[6px] transition-colors hover:text-accent hover:underline"
+            >
+              Xem bài Tarot cùng Rabbit tại {author.link.label}
+              <ArrowUpRight
+                aria-hidden
+                className="size-4 transition-transform duration-300 group-hover/arrow:translate-x-0.5 group-hover/arrow:-translate-y-0.5"
+              />
+            </a>
           </div>
         </Container>
       </section>
