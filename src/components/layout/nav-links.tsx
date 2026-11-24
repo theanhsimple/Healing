@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "cn";
-import { primaryNav } from "@/data/navigation";
+import { parentSite, primaryNav } from "@/data/navigation";
 
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
@@ -35,7 +35,28 @@ export function NavLinks() {
           </li>
         );
       })}
+      <li className="flex items-center gap-8">
+        <span aria-hidden className="h-4 w-px bg-border" />
+        <a
+          href={parentSite.href}
+          aria-label={parentSite.label}
+          className="inline-flex min-h-11 items-center gap-2 text-sm text-muted transition-colors duration-300 hover:text-foreground"
+        >
+          <ParentEmblem className="size-6" />
+          <span className="hidden lg:inline">{parentSite.label}</span>
+        </a>
+      </li>
     </ul>
+  );
+}
+
+/** Rabbit Tarot's emblem on an ivory disc, so it stays legible in dark mode. */
+function ParentEmblem({ className }: { className?: string }) {
+  return (
+    <span className={cn("inline-flex shrink-0 items-center justify-center rounded-full bg-[#f7f2ea]", className)}>
+      {/* eslint-disable-next-line @next/next/no-img-element -- tiny static icon */}
+      <img src={parentSite.emblem} alt="" width={144} height={144} className="size-[82%]" />
+    </span>
   );
 }
 
@@ -63,6 +84,18 @@ export function MobileNavLinks({ onNavigate }: { onNavigate: () => void }) {
           </li>
         );
       })}
+      <li className="border-b border-border">
+        <a
+          href={parentSite.href}
+          className="flex items-center gap-4 py-5 text-foreground transition-colors hover:text-accent"
+        >
+          <span aria-hidden className="w-6 font-sans text-xs text-muted-foreground">
+            ↩
+          </span>
+          <ParentEmblem className="size-7" />
+          <span className="font-display text-2xl leading-none">{parentSite.label}</span>
+        </a>
+      </li>
     </ul>
   );
 }

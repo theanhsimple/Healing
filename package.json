@@ -10,7 +10,8 @@
     "start:preview": "CONTENT_SOURCE=mock next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
-    "build:static": "node scripts/build-static.mjs"
+    "build:static": "node scripts/build-static.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.2",
