@@ -9,13 +9,13 @@ import type { Video } from "@/types/video";
 import { formatDate, formatDuration, formatDurationLong } from "@/lib/format";
 import { routes } from "@/lib/routes";
 
-interface FeaturedPostcardProps {
+interface FeaturedFilmProps {
   video: Video;
   categoryLabel: string;
   moods: Mood[];
 }
 
-export function FeaturedPostcard({ video, categoryLabel, moods }: FeaturedPostcardProps) {
+export function FeaturedFilm({ video, categoryLabel, moods }: FeaturedFilmProps) {
   const href = routes.postcard(video.slug);
   const videoMoods = moods.filter((m) => video.moodIds.includes(m.id));
 
@@ -42,7 +42,7 @@ export function FeaturedPostcard({ video, categoryLabel, moods }: FeaturedPostca
         </Link>
 
         <div className="col-span-4 md:col-span-6 lg:col-span-5 lg:pl-6">
-          <p className="eyebrow text-accent">Selected Postcard</p>
+          <p className="eyebrow text-accent">Thước phim chọn lọc</p>
           <h2
             id="featured-title"
             className="mt-4 font-display text-display-lg font-medium text-balance"
@@ -83,7 +83,7 @@ export function FeaturedPostcard({ video, categoryLabel, moods }: FeaturedPostca
 
             <Button asChild size="lg" className="mt-8">
               <Link href={href}>
-                Xem postcard
+                Xem thước phim này
                 <ArrowRight aria-hidden className="transition-transform duration-300 group-hover/button:translate-x-0.5" />
               </Link>
             </Button>

@@ -21,17 +21,17 @@ export default function NotFound() {
       <div className="col-span-4 md:col-span-5 lg:col-span-6 lg:col-start-6">
         <p className="eyebrow text-accent">Không tìm thấy</p>
         <h1 className="mt-4 font-display text-display-lg font-medium text-balance">
-          Tấm bưu thiếp này đã thất lạc trên đường đến bạn.
+          Trang này đã thất lạc trên đường đến bạn.
         </h1>
         <p className="mt-5 max-w-md leading-relaxed text-muted">
-          Có thể đường dẫn đã thay đổi, hoặc thước phim không còn được chia sẻ công khai.
+          Có thể đường dẫn đã thay đổi, hoặc nội dung không còn được chia sẻ công khai.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <Button asChild size="lg">
             <Link href={routes.home}>Về trang chủ</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href={routes.library()}>Khám phá thư viện</Link>
+            <Link href={routes.podcast}>Nghe podcast</Link>
           </Button>
         </div>
       </div>

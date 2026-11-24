@@ -8,7 +8,7 @@ import { getContentRepository } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Tìm kiếm",
-  description: "Tìm một thước phim trong kho lưu trữ Little Postcard.",
+  description: "Tìm một thước phim trên Little Postcard.",
 };
 
 export default async function SearchPage() {

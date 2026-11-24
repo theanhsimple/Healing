@@ -15,7 +15,7 @@ export default function RouteError({ error, retry }: { error: unknown; retry: ()
   return (
     <Container className="flex min-h-[60vh] items-center justify-center py-24">
       <ErrorState
-        title="Tấm bưu thiếp này chưa thể mở ra lúc này."
+        title="Trang này chưa thể mở ra lúc này."
         description="Có lỗi xảy ra khi tải trang. Bạn thử lại, hoặc quay về trang chủ nhé."
       >
         <Button onClick={() => retry()}>Thử lại</Button>

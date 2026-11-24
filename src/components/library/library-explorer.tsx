@@ -79,7 +79,7 @@ export function LibraryExplorer({ videos, categories, moods }: LibraryExplorerPr
   function loadMore() {
     const firstNew = visible.count;
     setVisible({ key: queryKey, count: visible.count + PAGE_SIZE });
-    // Move focus to the first newly shown postcard for keyboard users.
+    // Move focus to the first newly shown film for keyboard users.
     requestAnimationFrame(() => {
       listRef.current?.querySelectorAll<HTMLAnchorElement>("li a")[firstNew]?.focus();
     });
@@ -101,7 +101,7 @@ export function LibraryExplorer({ videos, categories, moods }: LibraryExplorerPr
         <SearchField
           value={query.q}
           onCommit={(q) => update({ q }, "replace")}
-          label="Tìm trong thư viện"
+          label="Tìm thước phim"
           placeholder="Tìm theo tên hoặc mô tả…"
           className="w-full md:max-w-md"
         />

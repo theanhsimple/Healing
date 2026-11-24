@@ -9,7 +9,7 @@ import { asset } from "@/lib/asset";
 export const metadata: Metadata = {
   title: "Giới thiệu",
   description:
-    "Little Postcard là một kho lưu trữ nhỏ của những thước phim ngắn — về thiên nhiên, âm thanh, ánh sáng và những khoảnh khắc đời thường.",
+    "Little Postcard gồm podcast Những điều nhỏ bé — những tấm bưu thiếp bằng âm thanh — và một góc thước phim ngắn về thiên nhiên, ánh sáng và những khoảnh khắc đời thường.",
 };
 
 const pillars = [
@@ -46,7 +46,7 @@ const beliefs = [
   },
   {
     title: "Ít mà thật",
-    text: "Mỗi tấm bưu thiếp là một khung hình thật, một âm thanh thật. Không kịch bản, không hiệu ứng thừa.",
+    text: "Mỗi câu chuyện, mỗi khung hình đều thật và giản dị. Không kịch bản phô trương, không hiệu ứng thừa.",
   },
   {
     title: "Không đòi hỏi gì",
@@ -70,8 +70,8 @@ export default function AboutPage() {
           </h1>
         </div>
         <p className="col-span-4 self-end font-display text-xl leading-snug italic text-muted md:col-span-6 lg:col-span-4">
-          A little place to pause — những tấm bưu thiếp bằng hình và tiếng, gửi đến bạn giữa những
-          ngày bận rộn.
+          A little place to pause — những câu chuyện nhỏ và những thước phim ngắn, gửi đến bạn
+          giữa những ngày bận rộn.
         </p>
       </Container>
 
@@ -101,15 +101,29 @@ export default function AboutPage() {
             Little Postcard là gì?
           </h2>
           <div className="col-span-4 flex flex-col gap-5 text-[1.0625rem] leading-relaxed text-foreground/80 md:col-span-8 lg:col-span-6 lg:col-start-6">
+            <p>Little Postcard có hai góc nhỏ.</p>
             <p>
-              Little Postcard là một kho lưu trữ nhỏ của những thước phim ngắn — mỗi thước phim chỉ
-              dài vài chục giây đến vài phút, về một mặt hồ, một con suối, một buổi hoàng hôn, một
-              vịnh biển lúc mặt trời vừa lên.
+              <Link
+                href={routes.podcast}
+                className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+              >
+                Podcast “Những điều nhỏ bé”
+              </Link>{" "}
+              — The Little Postcard Project — là những tấm bưu thiếp bằng âm thanh. Mỗi tập năm đến
+              bảy phút, một câu chuyện nhỏ về thiên nhiên, âm nhạc, nghệ thuật, những chuyến đi chưa
+              thực hiện và những điều đáng mong chờ trong tuần mới. Phát hành vào thứ Ba, thứ Năm và
+              Chủ Nhật.
             </p>
             <p>
-              Mỗi thước phim được gửi đi như một tấm bưu thiếp: ngắn, chậm rãi, có hình và có tiếng.
-              Không có lời bình, không có câu chuyện phải theo dõi — chỉ có khoảnh khắc ấy, nguyên
-              vẹn như lúc nó diễn ra.
+              <Link
+                href={routes.library()}
+                className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+              >
+                Thước phim
+              </Link>{" "}
+              là một góc riêng cho những đoạn phim ngắn — vài chục giây về một mặt hồ, một con suối,
+              một buổi hoàng hôn. Không lời bình, không câu chuyện phải theo dõi — chỉ có khoảnh khắc
+              ấy, nguyên vẹn như lúc nó diễn ra.
             </p>
           </div>
         </Container>
@@ -228,15 +242,15 @@ export default function AboutPage() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Button asChild size="lg">
-              <Link href={routes.library()}>Khám phá thư viện</Link>
+              <Link href={routes.podcast}>Nghe podcast</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href={routes.home}>Về trang chủ</Link>
+              <Link href={routes.library()}>Xem thước phim</Link>
             </Button>
           </div>
           <p className="mt-16 max-w-md text-xs leading-relaxed text-muted">
             Ảnh minh hoạ từ Unsplash. Thước phim từ Wikimedia Commons — tác giả và giấy phép được ghi
-            trên trang của từng tấm bưu thiếp. Nhạc nền: “Four-Note Motif”.
+            trên trang của từng thước phim. Nhạc nền: “Four-Note Motif”.
           </p>
         </Container>
       </section>

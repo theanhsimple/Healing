@@ -6,12 +6,12 @@ import type { Category } from "@/types/category";
 import type { Video } from "@/types/video";
 import { routes } from "@/lib/routes";
 
-interface LatestPostcardsProps {
+interface LatestFilmsProps {
   videos: Video[];
   categories: Category[];
 }
 
-export function LatestPostcards({ videos, categories }: LatestPostcardsProps) {
+export function LatestFilms({ videos, categories }: LatestFilmsProps) {
   return (
     <section
       id="latest"
@@ -23,7 +23,7 @@ export function LatestPostcards({ videos, categories }: LatestPostcardsProps) {
           titleId="latest-title"
           eyebrow="Mới cập nhật"
           title="Những thước phim mới nhất"
-          description="Mỗi video là một tấm bưu thiếp nhỏ được gửi đến bạn."
+          description="Những đoạn phim ngắn vừa được thêm vào."
           action={<ArrowLink href={routes.library()}>Xem tất cả</ArrowLink>}
         />
         <div className="mt-12 md:mt-16">

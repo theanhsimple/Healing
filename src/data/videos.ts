@@ -155,7 +155,7 @@ export const videos: Video[] = [
     title: "Cửa sông một ngày không gió",
     shortDescription: "Mặt nước phẳng như gương, núi xa mờ trong sương nhạt.",
     description:
-      "Một ngày không gió ở cửa sông. Mặt nước phẳng như gương, những cành cây rủ xuống khung hình, núi xa mờ trong sương nhạt. Thước phim dài nhất trong thư viện, dành cho những lúc muốn ngồi yên thật lâu.",
+      "Một ngày không gió ở cửa sông. Mặt nước phẳng như gương, những cành cây rủ xuống khung hình, núi xa mờ trong sương nhạt. Thước phim dài nhất ở đây, dành cho những lúc muốn ngồi yên thật lâu.",
     ...media("cua-song-mot-ngay-khong-gio"),
     durationSeconds: 30,
     categoryId: "cat_reflection",
@@ -247,7 +247,7 @@ export const videos: Video[] = [
     title: "Nơi con suối rẽ ngoặt",
     shortDescription: "Một khúc quanh của dòng suối, nơi nước va vào đá và đổi hướng.",
     description:
-      "Một khúc quanh nhỏ của dòng suối, nơi nước va vào đá rồi đổi hướng. Tấm bưu thiếp này chỉ dành cho những ai có đường dẫn.",
+      "Một khúc quanh nhỏ của dòng suối, nơi nước va vào đá rồi đổi hướng. Thước phim này chỉ dành cho những ai có đường dẫn.",
     ...media("noi-con-suoi-re-ngoat"),
     durationSeconds: 17,
     categoryId: "cat_moments",

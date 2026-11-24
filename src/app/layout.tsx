@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s · Little Postcard",
   },
   description:
-    "Little Postcard là kho lưu trữ những thước phim nhỏ, những khoảnh khắc dịu dàng và những điều đẹp đẽ vẫn luôn hiện diện quanh ta.",
+    "Little Postcard — podcast Những điều nhỏ bé và những thước phim ngắn về những khoảnh khắc dịu dàng, những điều đẹp đẽ vẫn luôn hiện diện quanh ta.",
   applicationName: "Little Postcard",
   openGraph: {
     type: "website",

@@ -85,13 +85,13 @@ export function SearchExperience({ videos, categories, moods }: SearchExperience
             ) : (
               <EmptyState
                 title={`Không tìm thấy thước phim nào cho “${term}”.`}
-                description="Thử một từ ngắn hơn, hoặc ghé thư viện để xem tất cả."
+                description="Thử một từ ngắn hơn, hoặc xem tất cả thước phim."
               >
                 <Button variant="outline" onClick={() => commit("")}>
                   Xoá tìm kiếm
                 </Button>
                 <Button asChild variant="link" className="h-11 px-3">
-                  <Link href={routes.library()}>Đến thư viện</Link>
+                  <Link href={routes.library()}>Xem tất cả thước phim</Link>
                 </Button>
               </EmptyState>
             )}

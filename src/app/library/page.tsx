@@ -7,9 +7,9 @@ import { Container } from "@/components/ui/container";
 import { getContentRepository } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Thư viện",
+  title: "Thước phim",
   description:
-    "Tất cả những tấm bưu thiếp của Little Postcard — tìm theo tên, lọc theo chủ đề và tâm trạng.",
+    "Những thước phim ngắn của Little Postcard — tìm theo tên, lọc theo chủ đề và tâm trạng.",
 };
 
 export default async function LibraryPage() {
@@ -23,8 +23,8 @@ export default async function LibraryPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Thư viện"
-        title="Tất cả những tấm bưu thiếp."
+        eyebrow="Thước phim"
+        title="Những thước phim ngắn."
         description="Tìm một thước phim theo tên, hoặc để chủ đề và tâm trạng dẫn đường."
       />
       <Container className="pb-24 lg:pb-32">
@@ -39,7 +39,7 @@ export default async function LibraryPage() {
 
 function LibraryLoading() {
   return (
-    <div role="status" aria-label="Đang tải thư viện">
+    <div role="status" aria-label="Đang tải danh sách thước phim">
       <div className="flex flex-col gap-6 md:flex-row md:justify-between">
         <Skeleton className="h-12 w-full md:max-w-md" />
         <Skeleton className="h-11 w-52" />

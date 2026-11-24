@@ -2,15 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { routes } from "@/lib/routes";
 import { asset } from "@/lib/asset";
 
-interface HeroSectionProps {
-  /** Link target for "Xem postcard mới nhất". */
-  latestHref: string;
+interface HeroLink {
+  href: string;
+  label: string;
 }
 
-export function HeroSection({ latestHref }: HeroSectionProps) {
+interface HeroSectionProps {
+  /** Main call to action (the podcast). */
+  primary: HeroLink;
+  /** Secondary call to action (the films). */
+  secondary: HeroLink;
+}
+
+export function HeroSection({ primary, secondary }: HeroSectionProps) {
   return (
     <section aria-labelledby="hero-title" className="pt-3 md:pt-6 lg:pt-8">
       <Container>
@@ -47,10 +53,10 @@ export function HeroSection({ latestHref }: HeroSectionProps) {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button asChild variant="inverse" size="lg">
-                  <Link href={routes.library()}>Khám phá thư viện</Link>
+                  <Link href={primary.href}>{primary.label}</Link>
                 </Button>
                 <Button asChild variant="outline-inverse" size="lg">
-                  <Link href={latestHref}>Xem postcard mới nhất</Link>
+                  <Link href={secondary.href}>{secondary.label}</Link>
                 </Button>
               </div>
             </div>

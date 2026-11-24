@@ -49,7 +49,7 @@ export default function PostcardPage({ params }: PageProps<"/postcard/[slug]">) 
 
 function PostcardSkeleton() {
   return (
-    <div role="status" aria-label="Đang tải tấm bưu thiếp">
+    <div role="status" aria-label="Đang tải thước phim">
       <Container className="pt-6 md:pt-8">
         <Skeleton className="h-11 w-64 max-w-full" />
       </Container>
@@ -87,7 +87,7 @@ async function PostcardView({ params }: Pick<PageProps<"/postcard/[slug]">, "par
         <Breadcrumb
           items={[
             { label: "Trang chủ", href: routes.home },
-            { label: "Thư viện", href: routes.library() },
+            { label: "Thước phim", href: routes.library() },
             ...(category
               ? [{ label: category.label, href: routes.library({ category: category.slug }) }]
               : []),
