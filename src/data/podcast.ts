@@ -34,6 +34,8 @@ export interface PodcastEpisode {
   theme?: string;
   keyMessage?: string;
   poster?: { src: string; alt: string; width: number; height: number };
+  /** Mixed episode audio (voice + music bed), see scripts/mix-podcast.sh. */
+  audio?: { src: string; durationSeconds: number };
   script?: ScriptSection[];
 }
 
@@ -272,7 +274,7 @@ export const podcastEpisodes: PodcastEpisode[] = [
     tagline:
       "Một câu chuyện nhỏ về việc cho phép bản thân được bắt đầu, được trải nghiệm và tận hưởng cuộc sống tự nhiên hơn.",
     airDate: "2026-11-24",
-    durationLabel: "5–7 phút",
+    durationLabel: "7 phút 28 giây",
     status: "published",
     theme: "Nghệ thuật, cảm xúc và cách tận hưởng những điều bình thường trong cuộc sống.",
     keyMessage: "Đừng đợi đến khi mọi thứ hoàn hảo mới bắt đầu tận hưởng cuộc sống.",
@@ -281,6 +283,10 @@ export const podcastEpisodes: PodcastEpisode[] = [
       alt: "Poster tập 01: xưởng vẽ buổi sáng ngập nắng, giá vẽ, tách cà phê và tấm bưu thiếp — Nghệ thuật không nghĩ quá nhiều",
       width: 1086,
       height: 1448,
+    },
+    audio: {
+      src: asset("/audio/podcast/tap-01-nghe-thuat-khong-nghi-qua-nhieu.mp3"),
+      durationSeconds: 448,
     },
     script: episode01Script,
   },

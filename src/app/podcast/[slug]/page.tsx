@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLeft, AudioLines } from "lucide-react";
+import { AudioPlayer } from "@/components/podcast/audio-player";
 import { EpisodePoster } from "@/components/podcast/episode-poster";
 import { Breadcrumb } from "@/components/postcard/breadcrumb";
 import { Skeleton } from "@/components/shared/skeleton";
@@ -106,13 +107,29 @@ async function EpisodeView({ params }: Pick<PageProps<"/podcast/[slug]">, "param
             ) : null}
           </header>
 
-          <aside className="mt-10 flex gap-4 border-y border-border py-5 text-sm text-muted">
-            <AudioLines aria-hidden className="mt-0.5 size-5 shrink-0 text-accent" strokeWidth={1.5} />
-            <p>
-              Bản thu âm của tập này đang được hoàn thiện. Trong lúc chờ, bạn có thể đọc trọn tấm bưu
-              thiếp dưới đây.
-            </p>
-          </aside>
+          {episode.audio ? (
+            <section id="nghe" aria-label="Nghe tập này" className="mt-10 scroll-mt-[calc(var(--header-height)+24px)]">
+              <AudioPlayer
+                src={episode.audio.src}
+                title={`Tập ${number} · ${episode.title}`}
+                durationSeconds={episode.audio.durationSeconds}
+                artwork={episode.poster?.src}
+                album={`${podcastSeries.title} — ${podcastSeries.englishTitle}`}
+                downloadName={`${episode.slug}.mp3`}
+              />
+              <p className="mt-3 text-xs text-muted">
+                Kịch bản đầy đủ của tập ở ngay bên dưới, bạn có thể vừa nghe vừa đọc.
+              </p>
+            </section>
+          ) : (
+            <aside className="mt-10 flex gap-4 border-y border-border py-5 text-sm text-muted">
+              <AudioLines aria-hidden className="mt-0.5 size-5 shrink-0 text-accent" strokeWidth={1.5} />
+              <p>
+                Bản thu âm của tập này đang được hoàn thiện. Trong lúc chờ, bạn có thể đọc trọn tấm
+                bưu thiếp dưới đây.
+              </p>
+            </aside>
+          )}
 
           {episode.script?.map((section) => (
             <section key={section.label} aria-label={section.label} className="mt-14">

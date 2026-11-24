@@ -320,6 +320,65 @@
     box-shadow: 0 0 0 3px var(--accent);
   }
 
+  /* Range input for the podcast player: themed track on light/dark surfaces. */
+  .audio-range {
+    --fill: 0%;
+    --buffer: 0%;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    height: 44px;
+    margin: 0;
+  }
+  .audio-range::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(
+      to right,
+      var(--foreground) var(--fill),
+      color-mix(in srgb, var(--foreground) 25%, transparent) var(--fill) var(--buffer),
+      var(--border) var(--buffer)
+    );
+  }
+  .audio-range::-moz-range-track {
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--foreground) 25%, transparent) var(--buffer),
+      var(--border) var(--buffer)
+    );
+  }
+  .audio-range::-moz-range-progress {
+    height: 3px;
+    border-radius: 2px;
+    background: var(--foreground);
+  }
+  .audio-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: var(--foreground);
+  }
+  .audio-range::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--foreground);
+  }
+  .audio-range:focus-visible {
+    outline: none;
+  }
+  .audio-range:focus-visible::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px var(--accent);
+  }
+  .audio-range:focus-visible::-moz-range-thumb {
+    box-shadow: 0 0 0 3px var(--accent);
+  }
+
   /* Hide a horizontal scroller's bar but keep it scrollable */
   .scrollbar-none {
     scrollbar-width: none;

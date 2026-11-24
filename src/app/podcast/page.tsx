@@ -99,9 +99,12 @@ export default function PodcastPage() {
                 </blockquote>
               ) : null}
               <Button asChild size="lg" className="mt-10">
-                <Link href={routes.podcastEpisode(latest.slug)}>
-                  Đọc tấm bưu thiếp
-                  <ArrowRight aria-hidden />
+                <Link href={`${routes.podcastEpisode(latest.slug)}${latest.audio ? "#nghe" : ""}`}>
+                  {latest.audio ? <Headphones aria-hidden /> : null}
+                  {latest.audio
+                    ? `Nghe tập ${String(latest.number).padStart(2, "0")}`
+                    : "Đọc tấm bưu thiếp"}
+                  {latest.audio ? null : <ArrowRight aria-hidden />}
                 </Link>
               </Button>
             </div>

@@ -59,9 +59,10 @@ export function PodcastSpotlight({ episode }: { episode: PodcastEpisode }) {
             ) : null}
             <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Button asChild size="lg">
-                <Link href={routes.podcastEpisode(episode.slug)}>
-                  Đọc tấm bưu thiếp
-                  <ArrowRight aria-hidden />
+                <Link href={`${routes.podcastEpisode(episode.slug)}${episode.audio ? "#nghe" : ""}`}>
+                  {episode.audio ? <Headphones aria-hidden /> : null}
+                  {episode.audio ? `Nghe tập ${number}` : "Đọc tấm bưu thiếp"}
+                  {episode.audio ? null : <ArrowRight aria-hidden />}
                 </Link>
               </Button>
               <ArrowLink href={routes.podcast}>Lịch phát sóng</ArrowLink>
