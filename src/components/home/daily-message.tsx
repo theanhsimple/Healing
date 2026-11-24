@@ -19,7 +19,7 @@ export function DailyMessage() {
 
   async function share() {
     if (!message) return;
-    const text = `“${message.text}” — Thông điệp hôm nay từ Little Postcard`;
+    const text = `${message.title}\n\n${message.text}\n\n— Thông điệp hôm nay từ Little Postcard`;
     const url = window.location.origin + window.location.pathname;
     try {
       if (navigator.share) {
@@ -40,25 +40,34 @@ export function DailyMessage() {
         <h2 id="daily-message" className="eyebrow text-accent">
           Thông điệp hôm nay
         </h2>
-        <p className="mt-2 min-h-5 text-xs text-muted">{dateKey ? formatMessageDate(dateKey) : " "}</p>
+        <p className="mt-2 min-h-5 text-xs text-muted">{dateKey ? formatMessageDate(dateKey) : "\u00a0"}</p>
 
-        <blockquote
-          aria-live="polite"
-          className="mt-6 flex min-h-[4.5rem] max-w-3xl items-center justify-center md:min-h-[5.5rem]"
-        >
+        <figure aria-live="polite" className="mt-7 flex min-h-[17.5rem] w-full max-w-2xl flex-col items-center sm:min-h-[12.5rem]">
           {message ? (
-            <p className="animate-page-in font-display text-display-md italic text-balance">“{message.text}”</p>
+            <div className="animate-page-in">
+              <figcaption className="font-display text-display-sm font-medium italic text-accent">
+                {message.title}
+              </figcaption>
+              <blockquote className="mt-4">
+                <p className="font-display text-[1.3125rem] leading-[1.6] text-pretty text-foreground md:text-[1.4375rem]">
+                  {message.text}
+                </p>
+              </blockquote>
+            </div>
           ) : (
-            <span aria-hidden className="block h-8 w-64 max-w-full bg-surface-secondary motion-safe:animate-pulse" />
+            <div aria-hidden className="flex w-full flex-col items-center gap-3">
+              <span className="block h-6 w-48 bg-surface-secondary motion-safe:animate-pulse" />
+              <span className="block h-5 w-full max-w-xl bg-surface-secondary motion-safe:animate-pulse" />
+              <span className="block h-5 w-5/6 max-w-lg bg-surface-secondary motion-safe:animate-pulse" />
+            </div>
           )}
-        </blockquote>
-        {message?.from ? <p className="mt-3 text-xs text-muted">— {message.from}</p> : null}
+        </figure>
 
         <button
           type="button"
           onClick={share}
           disabled={!message}
-          className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-sm px-3 text-sm text-muted transition-colors hover:bg-surface-secondary hover:text-foreground disabled:opacity-0"
+          className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-sm px-3 text-sm text-muted transition-colors hover:bg-surface-secondary hover:text-foreground disabled:opacity-0"
         >
           {copied ? (
             <>
