@@ -245,6 +245,189 @@ const upcoming = (
   tagline?: string,
 ): PodcastEpisode => ({ number, slug, title, airDate, tagline, durationLabel: "5–7 phút", status: "upcoming" });
 
+const episode02Script: ScriptSection[] = [
+  {
+    label: "Mở đầu",
+    paragraphs: passage(`
+Chào em.
+
+Hôm nay, anh muốn kể em nghe một câu chuyện hơi kỳ lạ một chút.
+
+Một câu chuyện xảy ra ở nơi rất xa chúng ta, trên bầu trời rộng lớn.
+
+Ở đó có hai người bạn.
+
+Một người thích xuất hiện thật rực rỡ, khiến mọi thứ trở nên sáng bừng.
+
+Người còn lại thì thích sự yên tĩnh, thường chỉ bước ra khi thế giới đã bắt đầu nghỉ ngơi.
+
+Họ rất khác nhau.
+
+Và điều thú vị là... họ chưa bao giờ thực sự có thời gian ngồi xuống trò chuyện với nhau.
+
+Cho đến một ngày nọ.
+`),
+  },
+  {
+    label: "Câu chuyện",
+    paragraphs: passage(`
+Trên bầu trời có một quy tắc rất kỳ lạ.
+
+Mặt Trời chỉ được làm việc vào ban ngày.
+
+Còn Mặt Trăng thì chỉ được xuất hiện vào ban đêm.
+
+Hai người thay phiên nhau, giống như một chiếc đồng hồ khổng lồ của vũ trụ.
+
+Mặt Trời rất tự hào về công việc của mình.
+
+Mỗi sáng, anh thức dậy, vươn vai một cái thật dài rồi bắt đầu chiếu sáng khắp nơi.
+
+Anh làm những bông hoa thức giấc, giúp những chú chim tìm đường bay, hong khô những giọt sương còn đọng trên lá.
+
+Anh thích nhìn thấy mọi thứ chuyển động.
+
+Thích những con đường đông đúc, những cánh đồng vàng, những ô cửa sổ mở ra đón ánh sáng.
+
+Mặt Trời thường nghĩ:
+
+"Thật tuyệt khi mình có thể khiến cả thế giới trở nên sống động như thế này."
+
+Mặt Trăng thì hoàn toàn ngược lại.
+
+Cô thích những khoảng lặng.
+
+Thích nhìn những mái nhà đã tắt đèn, những con đường vắng người và những ô cửa sổ nhỏ còn sáng trong đêm.
+
+Cô không cần làm mọi thứ rực rỡ.
+
+Chỉ cần một chút ánh sáng dịu dàng để những người đang đi muộn có thể nhìn thấy con đường phía trước.
+
+Mặt Trăng thường nghĩ:
+
+"Thật tuyệt khi thế giới có thể nghỉ ngơi một chút."
+
+Vì quá khác nhau nên hai người chưa bao giờ hiểu rõ công việc của nhau.
+
+Mặt Trời cho rằng Mặt Trăng hơi lười biếng.
+
+Còn Mặt Trăng nghĩ Mặt Trời có vẻ quá ồn ào.
+
+Một hôm, trong lúc Mặt Trời chuẩn bị đi ngủ và Mặt Trăng đang chờ đến lượt mình xuất hiện, cả hai tình cờ gặp nhau ở một khoảng trời rất xa.
+
+Mặt Trời nhìn Mặt Trăng rồi hỏi:
+
+"Em làm gì cả đêm vậy? Có phải chỉ đứng đó ngắm sao không?"
+
+Mặt Trăng bật cười.
+
+"Thế còn anh? Anh có biết mọi người cảm thấy thế nào khi trời nắng quá lâu không?"
+
+Mặt Trời hơi ngạc nhiên.
+
+Anh chưa từng nghĩ đến điều đó.
+
+Mặt Trăng kể rằng có những người thích đi dạo dưới ánh trăng, có những người ngồi bên cửa sổ nghe nhạc, và cũng có những người chỉ thực sự cảm thấy bình yên khi màn đêm buông xuống.
+
+Mặt Trời lắng nghe.
+
+Anh kể cho Mặt Trăng nghe về những đứa trẻ thích chạy trên bãi cỏ, những người nông dân chờ ánh nắng để làm việc, và những buổi sáng mà chỉ cần một tia nắng nhỏ cũng đủ khiến ai đó mỉm cười.
+
+Lần đầu tiên, cả hai nhận ra công việc của mình đều có ý nghĩa.
+
+Chỉ là mỗi người mang đến một điều khác nhau.
+
+Mặt Trời nghĩ một lúc rồi nói:
+
+"Vậy ra không phải ai cũng thích ánh sáng giống anh."
+
+Mặt Trăng mỉm cười:
+
+"Và cũng không phải ai cũng muốn sống trong bóng tối giống em."
+
+Hai người nhìn nhau.
+
+Rồi cùng bật cười.
+
+Từ hôm đó, Mặt Trời không còn nghĩ Mặt Trăng lười biếng nữa.
+
+Còn Mặt Trăng cũng không thấy Mặt Trời quá ồn ào.
+
+Họ hiểu rằng thế giới cần cả những ngày rực rỡ và những đêm yên tĩnh.
+
+Và rằng, đôi khi, điều đẹp nhất không phải là trở thành người giống nhau.
+
+Mà là biết dành một khoảng trời cho sự khác biệt của người kia.
+`),
+  },
+  {
+    label: "Suy ngẫm",
+    paragraphs: passage(`
+Anh nghĩ câu chuyện này cũng giống như những mối quan hệ trong cuộc sống.
+
+Có những người thích nói chuyện thật nhiều.
+
+Có những người cần một khoảng lặng trước khi chia sẻ điều gì đó.
+
+Có người thích đi thật xa, khám phá những nơi chưa từng đến.
+
+Có người chỉ muốn ở trong một căn phòng nhỏ, nghe bản nhạc quen thuộc và tận hưởng buổi tối của mình.
+
+Đôi khi, vì không hiểu sự khác biệt ấy, chúng ta dễ nghĩ rằng người kia không quan tâm.
+
+Một người im lặng, người còn lại nghĩ rằng mình đang bị bỏ quên.
+
+Một người cần thời gian riêng, người còn lại lại cảm thấy khoảng cách đang lớn dần.
+
+Nhưng có lẽ, không phải lúc nào sự khác biệt cũng là dấu hiệu của việc xa nhau.
+
+Đôi khi, nó chỉ đơn giản là cách mỗi người cảm nhận và sống với thế giới.
+
+Anh nghĩ điều quan trọng không phải là cố gắng khiến người kia trở nên giống mình.
+
+Mà là học cách hiểu điều gì khiến họ cảm thấy dễ chịu.
+
+Nếu một người thích ánh nắng, hãy cùng họ đi dạo vào buổi sáng.
+
+Nếu một người thích màn đêm, có thể ngồi bên cạnh họ một lúc, nghe một bản nhạc thật nhẹ.
+
+Không cần phải làm mọi thứ giống nhau.
+
+Chỉ cần đủ tò mò để tìm hiểu thế giới của nhau.
+
+Và đủ dịu dàng để không bắt người kia phải thay đổi chỉ vì họ khác mình.
+
+Bởi vì có những mối quan hệ đẹp không phải vì hai người luôn ở cạnh nhau.
+
+Mà vì dù mỗi người có một nhịp sống riêng, họ vẫn biết rằng mình được trân trọng.
+`),
+  },
+  {
+    label: "Lời kết",
+    paragraphs: passage(`
+Nếu hôm nay em gặp một người có cách nghĩ khác mình, có lẽ em có thể thử nhìn thế giới từ phía họ một chút.
+
+Biết đâu, điều khiến em thấy khó hiểu lại là điều rất tự nhiên đối với họ.
+
+Và biết đâu, khi hiểu thêm một chút, mình sẽ thấy thế giới rộng hơn rất nhiều.
+
+Anh mong em luôn có những người khiến em cảm thấy được là chính mình.
+
+Những người không cần em phải rực rỡ mỗi ngày.
+
+Cũng không cần em phải luôn vui vẻ hay luôn mạnh mẽ.
+
+Những người có thể ngồi cạnh em trong một buổi tối yên tĩnh, chẳng cần nói gì nhiều, nhưng vẫn khiến em cảm thấy dễ chịu.
+
+Cảm ơn em đã lắng nghe câu chuyện hôm nay.
+
+Hẹn gặp em trong tấm bưu thiếp tiếp theo, vào Chủ nhật nhé.
+
+Chúc em một đêm thật bình yên.
+`),
+  },
+];
+
 export const podcastEpisodes: PodcastEpisode[] = [
   {
     number: 1,
@@ -270,7 +453,28 @@ export const podcastEpisodes: PodcastEpisode[] = [
     },
     script: episode01Script,
   },
-  upcoming(2, "tap-02", "Cuộc trò chuyện giữa Mặt Trời và Mặt Trăng", "2026-11-26"),
+  {
+    number: 2,
+    slug: "tap-02-cuoc-tro-chuyen-giua-mat-troi-va-mat-trang",
+    title: "Cuộc trò chuyện giữa Mặt Trời và Mặt Trăng",
+    tagline: "Một câu chuyện nhỏ về sự khác biệt, hiểu – và trân trọng thế giới của nhau.",
+    airDate: "2026-11-26",
+    durationLabel: "6 phút 16 giây",
+    status: "published",
+    theme: "Có những người khác nhau hoàn toàn, nhưng vẫn có thể hiểu và trân trọng thế giới của nhau.",
+    keyMessage: "Không phải lúc nào chúng ta cũng cần giống nhau để có thể đồng hành.",
+    poster: {
+      src: asset("/images/podcast/tap-02-cuoc-tro-chuyen-giua-mat-troi-va-mat-trang.jpg"),
+      alt: "Poster tập 02: bầu trời lúc chạng vạng, Mặt Trời vàng ấm bên trái và vầng trăng khuyết giữa trời sao bên phải — Cuộc trò chuyện giữa Mặt Trời và Mặt Trăng",
+      width: 1086,
+      height: 1448,
+    },
+    audio: {
+      src: asset("/audio/podcast/tap-02-cuoc-tro-chuyen-giua-mat-troi-va-mat-trang.mp3?v=1"),
+      durationSeconds: 376,
+    },
+    script: episode02Script,
+  },
   upcoming(3, "tap-03", "Một ngày chẳng cần làm gì lớn lao", "2026-11-29"),
   upcoming(4, "tap-04", "Những chiếc mặt nạ trưởng thành", "2026-12-01"),
   upcoming(5, "tap-05", "Tiệm bán những ngày vui", "2026-12-03", "Một câu chuyện tưởng tượng có chút hài hước"),
