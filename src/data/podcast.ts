@@ -432,7 +432,7 @@ const episode03Script: ScriptSection[] = [
   {
     label: "Mở đầu",
     paragraphs: passage(`
-Nếu có một ngày được gửi đến tận cửa nhà bạn…
+Nếu có một ngày được gửi đến tận cửa nhà em…
 
 Một ngày không có lịch trình.
 
@@ -440,7 +440,7 @@ Không có cuộc hẹn phải nhớ.
 
 Không có điều gì cần hoàn thành trước khi mặt trời lặn.
 
-Bạn nghĩ ngày ấy sẽ trông như thế nào?
+Em nghĩ ngày ấy sẽ trông như thế nào?
 
 Có lẽ nó sẽ bắt đầu bằng một buổi sáng có nắng.
 
@@ -480,7 +480,7 @@ Rồi giống một con cá.
 
 Cuối cùng, nó biến thành một đám mây nhỏ và tan mất.
 
-Nếu nhìn đủ lâu, có lẽ bạn sẽ thấy cả bầu trời đang nằm gọn trong tách cà phê của mình.
+Nếu nhìn đủ lâu, có lẽ em sẽ thấy cả bầu trời đang nằm gọn trong tách cà phê của mình.
 
 Một chiếc lá ngoài ban công khẽ rung.
 
@@ -500,7 +500,7 @@ Một cửa tiệm kéo cánh cửa sắt lên, để ánh sáng tràn vào bên
 
 Mọi thứ vẫn đang diễn ra.
 
-Chỉ là không có gì thúc giục bạn phải chạy theo.
+Chỉ là không có gì thúc giục em phải chạy theo.
 `),
   },
   {
@@ -562,17 +562,17 @@ Những chiếc bóng dài hơn.
 
 Tiếng phố xá cũng nhỏ lại một chút.
 
-Có thể bạn đang nằm trên ghế sofa.
+Có thể em đang nằm trên ghế sofa.
 
 Một cuốn sách mở ở trang giữa.
 
 Một bản nhạc đang phát đến đoạn điệp khúc.
 
-Và rồi, chẳng hiểu vì sao, bạn ngủ quên.
+Và rồi, chẳng hiểu vì sao, em ngủ quên.
 
 Giấc ngủ ấy không dài.
 
-Chỉ đủ để khi tỉnh dậy, bạn thấy căn phòng đã đổi màu.
+Chỉ đủ để khi tỉnh dậy, em thấy căn phòng đã đổi màu.
 
 Ánh sáng vàng hơn.
 
@@ -582,7 +582,7 @@ Và bài hát vẫn đang tiếp tục, nhưng đã sang một bài khác.
 
 Có lẽ đó là một trong những cảm giác dễ chịu nhất của ngày nghỉ.
 
-Khi bạn không cần phải nhớ mình đã ngủ bao lâu.
+Khi em không cần phải nhớ mình đã ngủ bao lâu.
 
 Không cần phải tiếc vì thời gian trôi qua.
 
@@ -674,27 +674,27 @@ Có một buổi chiều được trôi qua theo cách riêng của nó.
 
 Thế là đủ để ngày hôm ấy trở nên đáng nhớ.
 
-Nếu hôm nay bạn chưa làm được điều gì đặc biệt…
+Nếu hôm nay em chưa làm được điều gì đặc biệt…
 
 Thì cũng không sao.
 
-Có thể bạn đã có một ngày rất đẹp.
+Có thể em đã có một ngày rất đẹp.
 
 Chỉ là vẻ đẹp ấy không nằm ở điều gì lớn lao.
 
-Nó nằm trong những khoảnh khắc nhỏ mà bạn đã đi qua.
+Nó nằm trong những khoảnh khắc nhỏ mà em đã đi qua.
 
 Và nếu ngày mai lại bắt đầu với thật nhiều việc phải làm…
 
-Mong rằng bạn vẫn nhớ đến một chiếc lá vàng đang xoay trong gió.
+Mong rằng em vẫn nhớ đến một chiếc lá vàng đang xoay trong gió.
 
 Một vệt nắng nằm trên sàn nhà.
 
 Và một ngày Chủ nhật đã từng chậm rãi đến thế.
 
-Chúc bạn một buổi tối thật dễ chịu.
+Chúc em một buổi tối thật dễ chịu.
 
-Hẹn gặp bạn ở chiếc postcard tiếp theo.
+Hẹn gặp em ở chiếc postcard tiếp theo.
 
 A little pause. A little piece of you.
 `),
