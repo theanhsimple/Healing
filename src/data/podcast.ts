@@ -428,6 +428,279 @@ Chúc em một đêm thật bình yên.
   },
 ];
 
+const episode03Script: ScriptSection[] = [
+  {
+    label: "Mở đầu",
+    paragraphs: passage(`
+Nếu có một ngày được gửi đến tận cửa nhà bạn…
+
+Một ngày không có lịch trình.
+
+Không có cuộc hẹn phải nhớ.
+
+Không có điều gì cần hoàn thành trước khi mặt trời lặn.
+
+Bạn nghĩ ngày ấy sẽ trông như thế nào?
+
+Có lẽ nó sẽ bắt đầu bằng một buổi sáng có nắng.
+
+Một vệt nắng rất dài, nằm trên sàn nhà như thể ai đó vừa vô tình đánh rơi một dải lụa vàng.
+
+Ngoài cửa sổ, bầu trời xanh đến mức những đám mây trông giống như đang trôi chậm hơn mọi ngày.
+
+Và chiếc đồng hồ…
+
+Hôm nay, chiếc đồng hồ có vẻ hơi lười.
+
+Kim phút cứ đi được một đoạn lại dừng lại ngắm trời.
+
+Kim giờ thì chẳng vội vàng gì.
+
+Còn kim giây, sau khi chạy quanh mặt số suốt cả tuần, quyết định nghỉ một vòng.
+
+Thế là ngày Chủ nhật bắt đầu.
+
+Không bằng tiếng chuông báo thức.
+
+Mà bằng một khoảng nắng rất nhẹ.
+`),
+  },
+  {
+    label: "Buổi sáng",
+    paragraphs: passage(`
+Buổi sáng ấy có mùi bánh mì mới nướng.
+
+Có tiếng nước chảy trong căn bếp.
+
+Có một tách cà phê đặt cạnh cửa sổ, khói bay lên thành những hình thù kỳ lạ.
+
+Lúc đầu, khói trông giống một chiếc thuyền.
+
+Rồi giống một con cá.
+
+Cuối cùng, nó biến thành một đám mây nhỏ và tan mất.
+
+Nếu nhìn đủ lâu, có lẽ bạn sẽ thấy cả bầu trời đang nằm gọn trong tách cà phê của mình.
+
+Một chiếc lá ngoài ban công khẽ rung.
+
+Một chú chim đậu trên dây điện, nghiêng đầu nhìn xuống phố.
+
+Không biết nó đang tìm gì.
+
+Có thể là một hạt bánh.
+
+Cũng có thể chỉ đang xem hôm nay thế giới có gì mới.
+
+Ở một nơi nào đó, một chiếc xe buýt vừa rời bến.
+
+Một người đi ngang qua con đường quen thuộc.
+
+Một cửa tiệm kéo cánh cửa sắt lên, để ánh sáng tràn vào bên trong.
+
+Mọi thứ vẫn đang diễn ra.
+
+Chỉ là không có gì thúc giục bạn phải chạy theo.
+`),
+  },
+  {
+    label: "Hành trình nhỏ",
+    paragraphs: passage(`
+Đến gần trưa, ngày Chủ nhật bắt đầu có những điều hơi kỳ lạ.
+
+Một chiếc lá vàng rơi xuống mặt đường.
+
+Nó không rơi thẳng xuống.
+
+Nó xoay một vòng.
+
+Rồi thêm một vòng nữa.
+
+Sau đó, gió đẩy nó đi qua ba viên gạch, dừng lại trước một chiếc giày, rồi tiếp tục hành trình như thể đang có một chuyến đi rất quan trọng.
+
+Có lẽ chiếc lá đang đến một nơi mà nó chưa từng biết.
+
+Một nơi có những chiếc lá khác.
+
+Một nơi có ánh nắng đẹp hơn.
+
+Hoặc đơn giản, nó chỉ muốn đi thêm một đoạn.
+
+Ở phía bên kia con phố, một đám mây trôi qua mái nhà.
+
+Bóng của nó chạy trên mặt đất, lướt qua hàng cây, qua một chiếc ghế đá, qua bức tường màu trắng.
+
+Trong vài giây, cả con phố như được phủ một lớp bóng mát mềm mại.
+
+Rồi đám mây đi mất.
+
+Nắng lại trở về.
+
+Có những điều chỉ xuất hiện trong một khoảnh khắc rất ngắn.
+
+Nếu không nhìn thấy, chúng ta cũng chẳng biết mình đã bỏ lỡ điều gì.
+
+Nhưng nếu tình cờ bắt gặp…
+
+Thì cũng giống như vừa nhận được một món quà nhỏ.
+
+Không có giấy gói.
+
+Không có lời chúc.
+
+Chỉ là một khoảnh khắc đẹp, tự nhiên đến rồi tự nhiên đi.
+`),
+  },
+  {
+    label: "Buổi chiều",
+    paragraphs: passage(`
+Buổi chiều là khoảng thời gian mà ngày Chủ nhật trở nên dịu dàng nhất.
+
+Ánh nắng bắt đầu chuyển màu.
+
+Những chiếc bóng dài hơn.
+
+Tiếng phố xá cũng nhỏ lại một chút.
+
+Có thể bạn đang nằm trên ghế sofa.
+
+Một cuốn sách mở ở trang giữa.
+
+Một bản nhạc đang phát đến đoạn điệp khúc.
+
+Và rồi, chẳng hiểu vì sao, bạn ngủ quên.
+
+Giấc ngủ ấy không dài.
+
+Chỉ đủ để khi tỉnh dậy, bạn thấy căn phòng đã đổi màu.
+
+Ánh sáng vàng hơn.
+
+Không khí mát hơn.
+
+Và bài hát vẫn đang tiếp tục, nhưng đã sang một bài khác.
+
+Có lẽ đó là một trong những cảm giác dễ chịu nhất của ngày nghỉ.
+
+Khi bạn không cần phải nhớ mình đã ngủ bao lâu.
+
+Không cần phải tiếc vì thời gian trôi qua.
+
+Bởi trong khoảnh khắc ấy, thời gian không phải thứ cần được sử dụng cho thật hiệu quả.
+
+Nó chỉ đơn giản là đang ở đó.
+
+Giống như ánh nắng.
+
+Giống như tiếng nhạc.
+
+Giống như một buổi chiều không có kế hoạch, nhưng vẫn đầy những điều nhỏ bé.
+`),
+  },
+  {
+    label: "Buổi tối",
+    paragraphs: passage(`
+Rồi ngày Chủ nhật bắt đầu khép lại.
+
+Bầu trời chuyển sang màu cam nhạt.
+
+Những ô cửa sổ lần lượt sáng đèn.
+
+Một vài chiếc xe chạy qua con đường đã quen.
+
+Ở đâu đó, có tiếng bát đũa chạm nhau trong căn bếp.
+
+Có mùi thức ăn nóng.
+
+Có một bài hát cũ vang lên từ căn phòng bên cạnh.
+
+Ngày hôm ấy chẳng có điều gì quá đặc biệt.
+
+Không có chuyến đi xa.
+
+Không có một thành tựu lớn.
+
+Không có câu chuyện nào đủ dài để kể lại với tất cả mọi người.
+
+Nhưng nếu gom những khoảnh khắc nhỏ trong ngày lại…
+
+Một vệt nắng buổi sáng.
+
+Một tách cà phê.
+
+Chiếc lá vàng trên đường.
+
+Một giấc ngủ trưa.
+
+Và ánh đèn vừa bật lên khi trời tối.
+
+Có lẽ chúng sẽ tạo thành một tấm bưu thiếp rất đẹp.
+
+Một tấm bưu thiếp không cần viết quá nhiều chữ.
+
+Chỉ cần ở góc dưới cùng, có một dòng nhỏ:
+
+“Ngày Chủ nhật, trời đẹp.”
+`),
+  },
+  {
+    label: "Lời kết",
+    paragraphs: passage(`
+Có những ngày chúng ta sẽ nhớ rất lâu.
+
+Những ngày có một điều gì đó lớn lao xảy ra.
+
+Một chuyến đi đáng nhớ.
+
+Một cuộc gặp gỡ đặc biệt.
+
+Một cột mốc mà mình đã chờ đợi từ rất lâu.
+
+Nhưng cũng có những ngày chẳng có gì để đánh dấu.
+
+Chúng đi qua rất nhẹ.
+
+Nhẹ đến mức đôi khi ta không nhận ra mình đã có một ngày dễ chịu.
+
+Và có lẽ, không phải ngày nào cũng cần trở thành một câu chuyện thật lớn.
+
+Đôi khi, chỉ cần có nắng.
+
+Có một điều gì đó ngon lành để ăn.
+
+Có một bài hát khiến mình muốn nghe thêm lần nữa.
+
+Có một buổi chiều được trôi qua theo cách riêng của nó.
+
+Thế là đủ để ngày hôm ấy trở nên đáng nhớ.
+
+Nếu hôm nay bạn chưa làm được điều gì đặc biệt…
+
+Thì cũng không sao.
+
+Có thể bạn đã có một ngày rất đẹp.
+
+Chỉ là vẻ đẹp ấy không nằm ở điều gì lớn lao.
+
+Nó nằm trong những khoảnh khắc nhỏ mà bạn đã đi qua.
+
+Và nếu ngày mai lại bắt đầu với thật nhiều việc phải làm…
+
+Mong rằng bạn vẫn nhớ đến một chiếc lá vàng đang xoay trong gió.
+
+Một vệt nắng nằm trên sàn nhà.
+
+Và một ngày Chủ nhật đã từng chậm rãi đến thế.
+
+Chúc bạn một buổi tối thật dễ chịu.
+
+Hẹn gặp bạn ở chiếc postcard tiếp theo.
+
+A little pause. A little piece of you.
+`),
+  },
+];
+
 export const podcastEpisodes: PodcastEpisode[] = [
   {
     number: 1,
@@ -475,7 +748,28 @@ export const podcastEpisodes: PodcastEpisode[] = [
     },
     script: episode02Script,
   },
-  upcoming(3, "tap-03", "Một ngày chẳng cần làm gì lớn lao", "2026-11-29"),
+  {
+    number: 3,
+    slug: "tap-03-mot-ngay-chang-can-lam-gi-lon-lao",
+    title: "Một ngày chẳng cần làm gì lớn lao",
+    tagline:
+      "Một ngày bình thường, nhưng đủ đầy những điều nhỏ bé khiến ta thấy cuộc sống thật dễ chịu.",
+    airDate: "2026-11-29",
+    durationLabel: "7 phút 17 giây",
+    status: "published",
+    keyMessage: "Không phải ngày nào cũng cần trở thành một câu chuyện thật lớn.",
+    poster: {
+      src: asset("/images/podcast/tap-03-mot-ngay-chang-can-lam-gi-lon-lao.jpg"),
+      alt: "Poster tập 03: bậu cửa sổ lúc hoàng hôn với tách cà phê, bánh sừng bò, cuốn sách mở, máy ảnh và lá vàng bay — Một ngày chẳng cần làm gì lớn lao",
+      width: 1086,
+      height: 1448,
+    },
+    audio: {
+      src: asset("/audio/podcast/tap-03-mot-ngay-chang-can-lam-gi-lon-lao.mp3?v=1"),
+      durationSeconds: 437,
+    },
+    script: episode03Script,
+  },
   upcoming(4, "tap-04", "Những chiếc mặt nạ trưởng thành", "2026-12-01"),
   upcoming(5, "tap-05", "Tiệm bán những ngày vui", "2026-12-03", "Một câu chuyện tưởng tượng có chút hài hước"),
   upcoming(6, "tap-06", "Thành phố lúc 7 giờ sáng", "2026-12-06", "Vẻ đẹp của những khởi đầu bình thường"),
